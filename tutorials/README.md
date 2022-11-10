@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/version-1.0-green) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE) [![](https://img.shields.io/badge/composer-officialxviid%2FCI4Favicon-sandybrown)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)
 
----
+
 
 ### Online
 
