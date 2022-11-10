@@ -45,4 +45,4 @@ You can support me through the various providers below:
 
 ## License
 
-`officialxviid/CI4Favicon` is licensed under the [**BSD 2-Clause**](https://github.com/officialxviid/CI4Favicon/blob/main/LICENSE).
+[**See**](https://github.com/officialxviid/CI4Favicon/blob/main/LICENSE).
