@@ -11,26 +11,26 @@ In more details, it supports:
 *   Create **one** ICO file and **many** PNG files with many favicon sizes from just **one** original PNG image as well as a `manifest.json` file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.
 *   Generate suitable `meta` and `link` tags for desktop web browsers as well as mobile touch devices to properly display favicon.
 
----
+## Tutorials
 
-## Tutorial/Docs?
+### Github
 
-![CI4Favicon Docs](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3d33c8e613487aa953a71e1ae21546a706860b90211b7af8.png)
+We provide several different languages ​​on GitHub:
 
-Languages:
+*   English (EN)
+*   Indonesian (ID)
 
-*   [x] English \[Markdown\]
-*   [x] Indonesian \[Markdown\]
-*   [ ] Japanese \[Markdown\]
+### YouTube
 
-![CI4Favicon Video](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2eef673ca2d6863bd008de372a4cdb82e08e628d71019d7a.png)
+You can watch video tutorials that we have uploaded on Youtube.
 
-Providers:
+> _**CI4Favicon - 1.0.**_ 
+> 
+> [https://youtube.com/](https://youtube.com/)
 
-*   [ ] YouTube.com
-*   [ ] Video.com
+### Download
 
----
+<table><tbody><tr><td><strong>Versions</strong></td><td><strong>Documents</strong></td><td><strong>Videos</strong></td></tr><tr><td>1.0</td><td>.pdf</td><td>.flv | .mp4 | .m3u8 | .ts | .3gp | .mov | .avi | .wmv</td></tr></tbody></table>
 
 ## Sponsors
 
@@ -40,8 +40,6 @@ You can support me through the various providers below:
 *   [x] **Trakteer** : [xviid](https://trakteer.id/xviid)
 *   [x] **Patreon** : [officialxviid](https://www.patreon.com/officialxviid)
 *   [x] **Buy Me A Coffee** : [officialxviid](https://www.buymeacoffee.com/officialxviid)
-
----
 
 ## License
 
