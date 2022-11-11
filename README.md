@@ -1,5 +1,7 @@
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f1db086732f08de88d73a7a45299fe7addc0d308cb98d867.png)
 
+![](https://img.shields.io/badge/status-coming%20soon-orange) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)
+
 ### 👁️ Overview
 
 Auto generate favicons and HTML tags from a original PNG file.
@@ -67,9 +69,9 @@ You can watch video tutorials that we have uploaded on Youtube.
 
 ### 🫰 Sponsors
 
-Come support us to be more excited! Just scan or click the QR below:
+Let's support us to be more excited! Just scan or click the QR below:
 
-[![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3a57a66364c7eb48d5b167b66af06534b84721ac929c6705.png)](https://www.buymeacoffee.com/officialxviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6b434eeee9b4d80d11ad69c2fe2b556f419e183bb1baf925.png)](https://opencollective.com/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/b0801c03259d4d90b7e8f57af7efa9005a297fe665f5e5ce.png)](https://www.patreon.com/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/849688d9e06475efa7555827c7577e0ac39c4142789b2bf1.png)](https://paypal.me/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f6b6e458d1165015ef164b5d502085da5042e4862b29bae7.png)](https://trakteer.id/xviid)
+[![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3a57a66364c7eb48d5b167b66af06534b84721ac929c6705.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6b434eeee9b4d80d11ad69c2fe2b556f419e183bb1baf925.png)](https://opencollective.com/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/b0801c03259d4d90b7e8f57af7efa9005a297fe665f5e5ce.png)](https://www.patreon.com/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/849688d9e06475efa7555827c7577e0ac39c4142789b2bf1.png)](https://paypal.me/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f6b6e458d1165015ef164b5d502085da5042e4862b29bae7.png)](https://trakteer.id/xviid)
 
 ---
 
