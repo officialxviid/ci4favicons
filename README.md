@@ -1,6 +1,6 @@
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f1db086732f08de88d73a7a45299fe7addc0d308cb98d867.png)
 
-![](https://img.shields.io/badge/status-coming%20soon-orange) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)
+![](https://img.shields.io/badge/status-coming%20soon-orange) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE) 
 
 ### 👁️ Overview
 
@@ -12,6 +12,10 @@ In more details, it supports:
 
 *   Create **one** ICO file and **many** PNG files with many favicon sizes from just **one** original PNG image as well as a `manifest.json` file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.
 *   Generate suitable `meta` and `link` tags for desktop web browsers as well as mobile touch devices to properly display favicon.
+
+We provide a variety of languages ​​in interactive messaging systems and documentation. The supported languages ​​are as follows:
+
+<table><tbody><tr><td><strong>Language</strong></td><td><strong>System</strong></td><td><strong>Docs</strong></td></tr><tr><td>English (EN)</td><td>✅</td><td>✅</td></tr><tr><td>Indonesian (ID)</td><td>✅</td><td>✅</td></tr></tbody></table>
 
 ---
 
@@ -62,6 +66,8 @@ You can watch video tutorials that we have uploaded on Youtube.
 > [https://youtube.com/](https://youtube.com/)
 
 #### Download
+
+Choose your preferred format to download
 
 <table><tbody><tr><td><strong>Versions</strong></td><td><strong>Documents</strong></td><td><strong>Videos</strong></td></tr><tr><td>1.0</td><td>.pdf</td><td>.flv | .mp4 | .m3u8 | .ts | .3gp | .mov | .avi | .wmv</td></tr></tbody></table>
 
