@@ -71,7 +71,7 @@ You can watch video tutorials that we have uploaded on Youtube.
 
 Let's support us to be more excited! Just scan or click the QR below:
 
-[![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3a57a66364c7eb48d5b167b66af06534b84721ac929c6705.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6b434eeee9b4d80d11ad69c2fe2b556f419e183bb1baf925.png)](https://opencollective.com/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/b0801c03259d4d90b7e8f57af7efa9005a297fe665f5e5ce.png)](https://www.patreon.com/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/849688d9e06475efa7555827c7577e0ac39c4142789b2bf1.png)](https://paypal.me/xviid)  [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f6b6e458d1165015ef164b5d502085da5042e4862b29bae7.png)](https://trakteer.id/xviid)
+[![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/style1-buymeacoffee.com-logotext.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/style1-opencollective.com-logotext.png)](https://opencollective.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/style1-patreon.com-logotext.png)](https://www.patreon.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/style1-paypal.me-logotext.png)](https://paypal.me/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/style1-trakteer.id-logotext.png)](https://trakteer.id/xviid)
 
 ---
 
