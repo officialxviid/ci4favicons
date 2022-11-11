@@ -55,7 +55,7 @@ We provide several different languages ​​on GitHub:
 
 You can watch video tutorials that we have uploaded on Youtube.
 
-> _**CI4Favicon - 1.0.**_ 
+> _**CI4Favicon - 1.0.**_
 > 
 > [https://youtube.com/](https://youtube.com/)
 
@@ -67,12 +67,9 @@ You can watch video tutorials that we have uploaded on Youtube.
 
 ### 🫰 Sponsors
 
-You can support me through the various providers below:
+Come support us to be more excited! Just scan or click the QR below:
 
-*   [x] **PayPal** : [@xviid | support@xviid.net](https://paypal.me/xviid)
-*   [x] **Trakteer** : [xviid](https://trakteer.id/xviid)
-*   [x] **Patreon** : [officialxviid](https://www.patreon.com/officialxviid)
-*   [x] **Buy Me A Coffee** : [officialxviid](https://www.buymeacoffee.com/officialxviid)
+[![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3a57a66364c7eb48d5b167b66af06534b84721ac929c6705.png)](https://www.buymeacoffee.com/officialxviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6b434eeee9b4d80d11ad69c2fe2b556f419e183bb1baf925.png)](https://opencollective.com/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/b0801c03259d4d90b7e8f57af7efa9005a297fe665f5e5ce.png)](https://www.patreon.com/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/849688d9e06475efa7555827c7577e0ac39c4142789b2bf1.png)](https://paypal.me/xviid)   [![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f6b6e458d1165015ef164b5d502085da5042e4862b29bae7.png)](https://trakteer.id/xviid)
 
 ---
 
