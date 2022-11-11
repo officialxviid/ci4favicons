@@ -24,7 +24,7 @@ An installation is a place that contains equipment and machinery which are being
 Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:
 
 ```plaintext
-composer require officialxviid/CI4Favicon
+composer require officialxviid/ci4favicon
 ```
 
 This will add the latest stable release of **OfficialXVIID:CI4Favicon** as a module to your project.
@@ -38,7 +38,7 @@ $psr4 = [
     'Config'                      => APPPATH . 'Config',
     APP_NAMESPACE                 => APPPATH,
     'App'                         => APPPATH,
-    'OfficialXVIID\CI4Favicon'    => APPPATH . 'ThirdParty/CI4Favicon-1.0/src',
+    'OfficialXVIID\CI4Favicon'    => APPPATH . 'ThirdParty/ci4favicon-1.0/src',
 ];
 ```
 
@@ -71,10 +71,10 @@ You can watch video tutorials that we have uploaded on Youtube.
 
 Let's support us to be more excited! Just scan or click the QR below:
 
-[![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/200px/style1-buymeacoffee.com-logotext.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/200px/style1-opencollective.com-logotext.png)](https://opencollective.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/200px/style1-patreon.com-logotext.png)](https://www.patreon.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/200px/style1-paypal.me-logotext.png)](https://paypal.me/xviid)  [![](https://raw.githubusercontent.com/officialxviid/CI4Favicon/main/dist/images/sponsors/qr/covers/200px/style1-trakteer.id-logotext.png)](https://trakteer.id/xviid)
+[![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-buymeacoffee.com-logotext.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-opencollective.com-logotext.png)](https://opencollective.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-patreon.com-logotext.png)](https://www.patreon.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-paypal.me-logotext.png)](https://paypal.me/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-trakteer.id-logotext.png)](https://trakteer.id/xviid)
 
 ---
 
 ### ⚖️ License
 
-[**MIT License**](https://github.com/officialxviid/CI4Favicon/blob/main/LICENSE).
+[**MIT License**](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE).
