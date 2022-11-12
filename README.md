@@ -1,6 +1,6 @@
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f1db086732f08de88d73a7a45299fe7addc0d308cb98d867.png)
 
-![](https://img.shields.io/badge/status-coming%20soon-orange) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)   
+![](https://img.shields.io/badge/status-coming%20soon-orange) ![](https://img.shields.io/badge/type-plugins-ff69b4) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)   
 [![Facebook](https://img.shields.io/static/v1?label=Facebook&message=share&style=social&logo=facebook)](https://www.facebook.com/share.php?u=https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon&utm_medium=btn&utm_content=blog) [![Twitter](https://img.shields.io/static/v1?label=Twitter&message=share&style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CI4Favicon&url=https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon) [![WhatsApp](https://img.shields.io/static/v1?label=WhatsApp&message=share&style=social&logo=whatsapp)](https://api.whatsapp.com/send/?text=CI4Favicon+https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon&type=custom_url&app_absent=0)
 
 ### 👁️ Overview
