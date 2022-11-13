@@ -55,8 +55,9 @@ $psr4 = [
 
 We provide several different languages ​​on GitHub:
 
-*   [English (EN)](https://github.com/officialxviid/ci4favicon/tree/main/tutorials/en/v.1.0)
-*   [Indonesian (ID)](https://github.com/officialxviid/ci4favicon/tree/main/tutorials/id/v.1.0)
+*   [English (EN)](https://github.com/officialxviid/ci4favicon/wiki/Tutorials-%5BEN%5D)
+*   [Indonesian (ID)](https://github.com/officialxviid/ci4favicon/wiki/Tutorials-%5BID%5D)
+*   [Japanese (JA)](https://github.com/officialxviid/ci4favicon/wiki/Tutorials-%5BJA%5D)
 
 #### YouTube
 
