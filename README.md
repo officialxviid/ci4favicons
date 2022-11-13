@@ -55,8 +55,8 @@ $psr4 = [
 
 We provide several different languages ​​on GitHub:
 
-*   English (EN)
-*   Indonesian (ID)
+*   [English (EN)](https://github.com/officialxviid/ci4favicon/tree/main/tutorials/en/v.1.0)
+*   [Indonesian (ID)](https://github.com/officialxviid/ci4favicon/tree/main/tutorials/id/v.1.0)
 
 #### YouTube
 
@@ -64,7 +64,7 @@ You can watch video tutorials that we have uploaded on Youtube.
 
 > _**CI4Favicon - 1.0.**_
 > 
-> [https://youtube.com/](https://youtube.com/)
+> https://youtube.com/
 
 #### Download
 
