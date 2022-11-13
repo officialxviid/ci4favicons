@@ -1,6 +1,6 @@
 ### CI4FAVICON TUTORIALS
 
-![language](https://img.shields.io/static/v1?label=language&message=EN&style=plastic&color=blue)  ![author](https://img.shields.io/static/v1?label=author&message=XVIID%20Developer&style=plastic)  ![updated](https://img.shields.io/static/v1?label=updated&message=Nov%2013%202022&style=plastic&color=green)
+![language](https://img.shields.io/static/v1?label=language&message=ID&style=plastic&color=blue)  ![author](https://img.shields.io/static/v1?label=author&message=XVIID%20Developer&style=plastic)  ![updated](https://img.shields.io/static/v1?label=updated&message=Nov%2013%202022&style=plastic&color=green)
 
 Halo semuanya! Apakah Anda siap untuk berselancar dengan CI4Favicon? Ayo mulai berselancar guys!
 
