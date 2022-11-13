@@ -9,7 +9,7 @@ Basic Commands:
 *   **ci4favicon:publish** is the most basic, publish count for copying a file or files into a project.
 *   **ci4favicon:generate** is the command to generate a favicon.
 *   **ci4favicon:help** is the command to display help to the user.
-*   **ci4favicon:help** is a command to display credit information.
+*   **ci4favicon:credit** is a command to display credit information.
 
 ---
 
