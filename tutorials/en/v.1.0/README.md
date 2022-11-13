@@ -1,8 +1,16 @@
 ### CI4FAVICON TUTORIALS
 
-![language](https://img.shields.io/static/v1?label=language&message=EN&style=plastic&color=blue)  ![author](https://img.shields.io/static/v1?label=author&message=XVIID%20Developer&style=plastic)
+![language](https://img.shields.io/static/v1?label=language&message=EN&style=plastic&color=blue)  ![author](https://img.shields.io/static/v1?label=author&message=XVIID%20Developer&style=plastic)  ![updated](https://img.shields.io/static/v1?label=updated&message=Nov%2013%202022&style=plastic&color=green)
 
 Hi everyone! Are you ready to surf with CI4Favicon? Let's surf guys!
+
+Basic Commands:
+
+*   ci4favicon:publish
+*   ci4favicon:generate
+*   ci4favicon:help
+*   ci4favicon:credit
+*   ci4favicon
 
 ---
 
@@ -106,6 +114,115 @@ class CI4Favicon extends OfficialXVIID\CI4Favicon\Config\CI4Favicon {
 
 ### ⚡ Generate
 
+To generate a favicon, run the following command:
+
+```plaintext
+php spark ci4favicon:generate
+```
+
 ---
 
 ### 🖥️ Output
+
+There are 2 ways to display favicon to Views:
+
+#### Method 1 “Calling the ci4favicon() helper to Views”.
+
+So that the **“ci4favicon”** helper function can be called continuously, you can add **ci4favicon** to `$helpers` in **App\\Controllers\\BaseController.php**
+
+```plaintext
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use CodeIgniter\HTTP\CLIRequest;
+use CodeIgniter\HTTP\IncomingRequest;
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\ResponseInterface;
+
+abstract class BaseController extends Controller{
+    protected $helpers = ['ci4favicon'];
+    
+    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger){
+        parent::initController($request, $response, $logger);
+    }
+}
+```
+
+Now, call the helper in your App\\Views\\welcome.php
+
+```plaintext
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <!-- Call CI4Favicon Helper (Method 1)-->
+    <?php echo ci4favicon(); ?>
+    
+    <!-- Call CI4Favicon Helper (Method 2)-->
+    <?= ci4favicon(); ?>
+    
+
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+> 💡Knowledges:
+> 
+> **\<?=** same as **\<?php echo**
+
+#### Method 2 “Sending Parameters to Views”.
+
+```plaintext
+<?php
+
+namespace App\Controllers;
+
+class BlogController extends BaseController{
+    public function index(){
+        $data = [
+            'title'         => 'My Blog',
+            'description'    => '',
+            'favicon'        => ci4favicon(),
+        ];
+        return view('blog', $data);
+    }
+}
+```
+
+Now, call the helper in your App\\Views\\welcome.php
+
+```plaintext
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Call title param -->
+    <title><?= $title; ?></title>
+    
+    <!-- Call description param -->
+    <meta name="description" content="<?= $description; ?>">
+    
+    <!-- Call favicon param -->
+    <?= $favicon; ?>
+    
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+Done
