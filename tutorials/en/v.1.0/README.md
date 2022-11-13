@@ -125,7 +125,7 @@ php spark ci4favicon:generate
 
 There are 2 ways to display favicon to Views:
 
-#### Method 1 “Calling the ci4favicon() helper to Views”.
+#### Method 1 “_Calling the ci4favicon() helper to Views_”.
 
 So that the **“ci4favicon”** helper function can be called continuously, you can add **ci4favicon** to `$helpers` in **App\\Controllers\\BaseController.php**
 
@@ -149,7 +149,7 @@ abstract class BaseController extends Controller{
 }
 ```
 
-Now, call the helper in your App\\Views\\welcome.php
+Now, call the helper in your **App\\Views\\welcome.php**
 
 ```plaintext
 <!DOCTYPE html>
@@ -179,7 +179,9 @@ Now, call the helper in your App\\Views\\welcome.php
 > 
 > **\<?=** same as **\<?php echo**
 
-#### Method 2 “Sending Parameters to Views”.
+#### Method 2 “_Sending Variables to Views_”.
+
+For example, I created a **Blog Controller** in **App\\Controllers\\BlogController.php**
 
 ```plaintext
 <?php
@@ -198,7 +200,7 @@ class BlogController extends BaseController{
 }
 ```
 
-Now, call the helper in your App\\Views\\welcome.php
+Now, call the helper in your **App\\Views\\welcome.php**.
 
 ```plaintext
 <!DOCTYPE html>
@@ -225,5 +227,3 @@ Now, call the helper in your App\\Views\\welcome.php
 ```
 
 Done
-
----
