@@ -6,11 +6,10 @@ Hi everyone! Are you ready to surf with CI4Favicon? Let's surf guys!
 
 Basic Commands:
 
-*   ci4favicon:publish
-*   ci4favicon:generate
-*   ci4favicon:help
-*   ci4favicon:credit
-*   ci4favicon
+*   **ci4favicon:publish** is the most basic, publish count for copying a file or files into a project.
+*   **ci4favicon:generate** is the command to generate a favicon.
+*   **ci4favicon:help** is the command to display help to the user.
+*   **ci4favicon:help** is a command to display credit information.
 
 ---
 
@@ -226,3 +225,5 @@ Now, call the helper in your App\\Views\\welcome.php
 ```
 
 Done
+
+---
