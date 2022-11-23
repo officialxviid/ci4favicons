@@ -12,7 +12,7 @@
   <a href="https://github.com/officialxviid/disgester/releases" rel="nofollow">
     <img src="https://img.shields.io/badge/version-coming%20soon-brightgreen" alt="Last Version" data-canonical-src="https://img.shields.io/badge/version-1.0.0-brightgreen" style="max-width:100%;">
   </a>
-  <img src="https://img.shields.io/badge/vendors-74-orange" alt="Vendors" data-canonical-src="https://img.shields.io/badge/vendors-74-orange" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/sponsors-8-pink" alt="Vendors" data-canonical-src="https://img.shields.io/badge/vendors-74-orange" style="max-width:100%;">
   <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
