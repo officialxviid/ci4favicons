@@ -90,15 +90,13 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <p>Configure your <b>App\Config\CI4Favicon.php</b></p>
 <ul>
   <li><code>$input</code>: The PNG file that you prepared earlier. The start of this path is <code>ROOTPATH</code>.</li>
-  <li><b><code>$output</code></b>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
+  <li><code>$output</code>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
   <li><code>$appName</code>: Set the application name in the <b>manifest.json</b> file. Default is an empty string.</li>
   <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor">Tile Color</a>.</li>
   <li><code>$browserConfigFile</code>: The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <b>browserconfig.xml</b> file. If you have a browser configuration, put the file in the public folder.</li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
-  <li><code></code>: </li>
+  <li><code>$ico64</code>: Include the 64x64 image inside the output ICO file (which contains only 16x16 and 32x32 images by default)</li>
+  <li><code>$ico48</code>: Include the 48x48 image inside the output ICO file (which contains only 16x16 and 32x32 images by default).</li>
+  <li><code>$noOldApple</code>: Exclude pngs files that used by old Apple touch devices.</li>
+  <li><code>$noAndroid</code>: Exclude <b>manifest.json</b> files and PNG files for Android devices</li>
+  <li><code>$noMs</code>: Exclude images for Windows tile</li>
 </ul>
