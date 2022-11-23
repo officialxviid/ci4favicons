@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/officialxviid/disgester">
+  <a href="https://github.com/officialxviid/ci4favicon">
     <img src="https://raw.githubusercontent.com/officialxviid/officialxviid/main/assets/ci4favicon/logo-symbol.png" width="250"/>
   </a>
   <br>
@@ -20,7 +20,6 @@
 
 <blockquote align="center">
 Inspired by <a href="https://github.com/letrunghieu/favicon" rel="nofollow"><code>letrunghieu/favicon</code></a>, this plugin will help you (CodeIgniter developer) to display the correct favicon for your website with just one original PNG image.
-In more details, it supports: Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface. Generate suitable <code>meta</code> and <code>link</code> tags for desktop web browsers as well as mobile touch devices to properly display favicon.
 </blockquote>
 
 <p align="center">
@@ -28,3 +27,24 @@ In more details, it supports: Create one ICO file and many PNG files with many f
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
+
+<br><br>
+
+<h2>Introduction</h2>
+
+<h3>Overview</h3>
+<p>In more details, it supports:</p>
+<ul>
+  <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
+  <li>Generate suitable <code>meta</code> and <code>link</code> tags for desktop web browsers as well as mobile touch devices to properly display favicon.</li>
+</ul>
+
+<h3>Basic Commands</h3>
+<ul>
+  <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
+  <li><code>ci4favicon:generate</code> to generate favicon.</li>
+  <li><code>ci4favicon:help</code> to show help.</li>
+  <li><code>ci4favicon:credit</code> to display credit information.</li>
+</ul>
+
+<h2>Getting Started</h2>
