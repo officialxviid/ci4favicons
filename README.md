@@ -70,3 +70,12 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <p>Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:</p>
 <pre><code class="lang-bash"><span class="hljs-symbol">composer</span> <span class="hljs-meta">require</span> officialxviid/ci4favicon
 </code></pre>
+<p><b>Manual Installation</b></p>
+<p>Should you choose not to use Composer to install, you can clone or download this repo and then enable it by editing <b>app/Config/Autoload.php</b> and adding the <b>OfficialXVIID\CI4Favicon</b> namespace to the <code>$psr4</code> array. For example, if you copied it into <b>app/ThirdParty/</b>:</p>
+<pre><code class="lang-php">$psr4 = [
+    <span class="hljs-string">'Config'</span>                      =&gt; APPPATH . <span class="hljs-string">'Config'</span>,
+    APP_NAMESPACE                 =&gt; APPPATH,
+    <span class="hljs-string">'App'</span>                         =&gt; APPPATH,
+    <span class="hljs-string">'OfficialXVIID\CI4Favicon'</span>    =&gt; APPPATH . <span class="hljs-string">'ThirdParty/ci4favicon-1.0.0/src'</span>,
+];
+</code></pre>
