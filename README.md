@@ -24,7 +24,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </blockquote>
 
 <p align="center">
-  <a href="https://github.com/officialxviid/ci4favicon/wiki/Getting-Started">Getting started</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/wiki/Guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE">License</a>
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE">License</a>
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
@@ -59,7 +59,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>__FILE__</code> is simply the name of the current file.</li>
 </ul>
 
-<h2>Getting Started</h2>
+<h2>Guidelines</h2>
 
 <h3>Preparation</h3>
 <p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
