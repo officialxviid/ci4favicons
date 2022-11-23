@@ -14,7 +14,7 @@
   </a>
   <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
   <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
-  <a href="#License" rel="nofollow">
+  <a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
 </p>
@@ -24,7 +24,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </blockquote>
 
 <p align="center">
-  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE">License</a>
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="#License">License</a>
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
@@ -64,7 +64,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
 
 <h3>Installation</h3>
-<p>We need <a href="http://php.net/manual/en/book.imagick.php">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
+<p>We need <a href="http://php.net/manual/en/book.imagick.php" target="_blank">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php" target="_blank">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
 <p><b>Installation Using Composer</b></p>
 <p>Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:</p>
 <pre><code class="lang-bash"><span class="hljs-symbol">composer</span> <span class="hljs-meta">require</span> officialxviid/ci4favicon
@@ -91,7 +91,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>$input</code>: The PNG file that you prepared earlier. The start of this path is <code>ROOTPATH</code>.</li>
   <li><code>$output</code>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
   <li><code>$appName</code>: Set the application name in the <b>manifest.json</b> file. Default is an empty string.</li>
-  <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor">Tile Color</a>.</li>
+  <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor" target="_blank">Tile Color</a>.</li>
   <li><code>$browserConfigFile</code>: The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <b>browserconfig.xml</b> file. If you have a browser configuration, put the file in the public folder.</li>
   <li><code>$ico64</code>: Include the 64x64 image inside the output ICO file (which contains only 16x16 and 32x32 images by default)</li>
   <li><code>$ico48</code>: Include the 48x48 image inside the output ICO file (which contains only 16x16 and 32x32 images by default).</li>
@@ -177,4 +177,4 @@ class Home extends BaseController{
 
 <h2>License</h2>
 
-<p>CI4Favicon is under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE">LICENSE</a> file for more detail.</p>
+<p>CI4Favicon is under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE" target="_blank">LICENSE</a> file for more detail.</p>
