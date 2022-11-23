@@ -33,7 +33,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <h2>Introduction</h2>
 
 <h3>Overview</h3>
-It supports:</p>
+<p>It supports:</p>
 <ul>
   <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
   <li>Generate suitable <code>meta</code> and <code>link</code> tags for desktop web browsers as well as mobile touch devices to properly display favicon.</li>
@@ -58,3 +58,9 @@ It supports:</p>
 </ul>
 
 <h2>Getting Started</h2>
+
+<h3>Preparation</h3>
+<p>Prepare your PNG file with high quality. I recommend minimum PNG size is 512x512 px.</p>
+
+<h3>Installation</h3>
+<p>We need <a href="http://php.net/manual/en/book.imagick.php">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
