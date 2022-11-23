@@ -10,9 +10,10 @@
 
 <p align="center">
   <a href="https://github.com/officialxviid/disgester/releases" rel="nofollow">
-    <img src="https://img.shields.io/badge/status-develop-orange" alt="Last Version" data-canonical-src="https://img.shields.io/badge/status-maintenance-orange" style="max-width:100%;">
+    <img src="https://img.shields.io/badge/status-develop-orange" alt="Status" data-canonical-src="https://img.shields.io/badge/status-develop-orange" style="max-width:100%;">
   </a>
-  <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Vendors" data-canonical-src="https://img.shields.io/badge/vendors-74-orange" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
   <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
@@ -50,10 +51,10 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 
 <h3>Basic Constant</h3>
 <ul>
-  <li><code>ROOTPATH</code> is <b>your_project/</b>.</li>
-  <li><code>FCPATH</code> is <b>your_project/public/</b>.</li>
-  <li><code>APP_NAMESPACE</code> is <b>your_project/app/</b>.</li>
-  <li><code>COMPOSER_PATH</code> is <b>your_project/vendor/autoload.php</b>.</li>
+  <li><code>ROOTPATH</code> is <b>📁 your_project/</b>.</li>
+  <li><code>FCPATH</code> is <b>📁 your_project/public/</b>.</li>
+  <li><code>APP_NAMESPACE</code> is <b>📁 your_project/app/</b>.</li>
+  <li><code>COMPOSER_PATH</code> is <b>📁 your_project/vendor/autoload.php</b>.</li>
   <li><code>__DIR__</code> is a "magic constant" in PHP 5.3 or above which always refers to the current directory of the file from which it is called.</li>
   <li><code>__FILE__</code> is simply the name of the current file.</li>
 </ul>
