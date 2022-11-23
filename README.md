@@ -121,11 +121,11 @@ class Home extends BaseController{
     public function index(){
         $favicon = new CI4Favicon();
         $favicon-&gt;output();
-        $data[&quot;favicon&quot;] = $favicon;
-        return view(&quot;welcome_message&quot;, $data);
+        $data['favicon'] = $favicon;
+        return view('welcome_message', $data);
     }
-}
-</code></pre>
+    
+}</code></pre>
     <br>
     open your <b>app\Views\welcome_message.php</b>
     <br>
