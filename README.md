@@ -19,7 +19,7 @@
 </p>
 
 <blockquote align="center">
-Inspired by <a href="https://github.com/letrunghieu/favicon" rel="nofollow"><code>letrunghieu/favicon</code></a>, this plugin will help you (CodeIgniter developer) to display the correct favicon for your website with just one original PNG image.
+This plugin will help you (CodeIgniter developer) to display the correct favicon for your website with just one original PNG image.
 </blockquote>
 
 <p align="center">
@@ -33,7 +33,7 @@ Inspired by <a href="https://github.com/letrunghieu/favicon" rel="nofollow"><cod
 <h2>Introduction</h2>
 
 <h3>Overview</h3>
-<p>In more details, it supports:</p>
+It supports:</p>
 <ul>
   <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
   <li>Generate suitable <code>meta</code> and <code>link</code> tags for desktop web browsers as well as mobile touch devices to properly display favicon.</li>
