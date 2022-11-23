@@ -46,7 +46,6 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
   <li><code>ci4favicon:generate</code> to generate favicon.</li>
   <li><code>ci4favicon:help</code> to show help.</li>
-  <li><code>ci4favicon:credit</code> to display credit information.</li>
 </ul>
 
 <h3>Basic Constant</h3>
@@ -100,3 +99,68 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>$noAndroid</code>: Exclude <b>manifest.json</b> files and PNG files for Android devices</li>
   <li><code>$noMs</code>: Exclude images for Windows tile</li>
 </ul>
+
+<h3>Generate</h3>
+<p>Once you have configured it, run this command to generate the favicon:</p>
+<pre><code class="lang-bash">php spark ci4favicon:<span class="hljs-keyword">generate</span>
+</code></pre>
+<p>This will output the resulting favicon in your <code>$output</code>.</p>
+
+<h3>Output</h3>
+<p>To produce HTML Tag output, there are 2 ways you can do it.</p>
+<ul>
+  <li>
+    <b>Send variables from Controllers to Views.</b>
+    <br>
+    open your <b>app\Controllers\Home.php</b>
+    <br>
+    <br>
+    open your <b>app\Views\welcome_message.php</b>
+    <br>
+    <pre><code class="lang-html">    &lt;head&gt;
+        ...
+        &lt;?= $favicon; ?&gt;
+        ...
+    &lt;/head&gt;</code></pre>
+    <br>
+  </li>
+  <li>
+    <b>Using helpers.</b>
+    <br>
+    open your <b>app\Views\welcome_message.php</b>
+    <br>
+    <pre><code class="lang-html">    &lt;head&gt;
+        ...
+        &lt;?php
+        	helper('ci4favicon');
+        	echo ci4favicon();
+        ?&gt;
+        ...
+    &lt;/head&gt;</code></pre>
+  </li>
+</ul>
+
+<p><b>HTML Tag Result:</b></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-config"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/IEConfig.xml"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"57x57"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-57x57.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"60x60"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-60x60.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"72x72"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-72x72.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"114x114"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-114x114.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"76x76"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-76x76.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"120x120"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-120x120.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"152x152"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-152x152.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"180x180"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-180x180.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon-32x32.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"32x32"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/android-chrome-192x192.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"192x192"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon-16x16.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"16x16"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"manifest"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/manifest.json"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"application-name"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Hieu Le Favicon"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileColor"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"#F0F0F0"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileImage"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-144x144.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square70x70logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-70x70.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square150x150logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-150x150.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-wide310x150logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-310x150.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square310x310logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-310x310.png"</span> /&gt;</span>
+</code></pre>
+
+<h2>License</h2>
