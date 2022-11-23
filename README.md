@@ -9,12 +9,12 @@
 <h4 align="center">Auto generate favicons and HTML tags from a original PNG file</h4>
 
 <p align="center">
-  <a href="https://github.com/officialxviid/disgester/releases" rel="nofollow">
+  <a href="https://github.com/officialxviid/ci4favicon/releases" rel="nofollow">
     <img src="https://img.shields.io/badge/status-develop-orange" alt="Status" data-canonical-src="https://img.shields.io/badge/status-develop-orange" style="max-width:100%;">
   </a>
   <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
   <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
-  <a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE" rel="nofollow">
+  <a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE" target="_blank" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
 </p>
