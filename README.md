@@ -177,4 +177,4 @@ class Home extends BaseController{
 
 <h2>License</h2>
 
-<p>The package is released under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE">LICENSE</a> file for more detail.</p>
+<p>CI4Favicon is under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE">LICENSE</a> file for more detail.</p>
