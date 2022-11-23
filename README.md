@@ -79,3 +79,11 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
     <span class="hljs-string">'OfficialXVIID\CI4Favicon'</span>    =&gt; APPPATH . <span class="hljs-string">'ThirdParty/ci4favicon-1.0.0/src'</span>,
 ];
 </code></pre>
+
+<h3>Publishing</h3>
+<p>To copy files within a project using robust detection and error checking, run the following command:</p>
+<pre><code class="lang-bash"><span class="hljs-selector-tag">php</span> <span class="hljs-selector-tag">spark</span> <span class="hljs-selector-tag">ci4favicon</span><span class="hljs-selector-pseudo">:publish</span>
+</code></pre>
+<p>This will generate <b>App\Config\CI4Favicon.php</b></p>
+
+<h3>Configuration</h3>
