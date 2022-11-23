@@ -14,7 +14,7 @@
   </a>
   <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
   <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
-  <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE" rel="nofollow">
+  <a href="#License" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
 </p>
@@ -114,6 +114,18 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
     <br>
     open your <b>app\Controllers\Home.php</b>
     <br>
+    <pre><code class="language-php">&lt;?php
+namespace App\Controllers;
+use OfficialXVIID\CI4Favicon\CI4Favicon;
+class Home extends BaseController{
+    public function index(){
+        $favicon = new CI4Favicon();
+        $favicon-&gt;output();
+        $data[&quot;favicon&quot;] = $favicon;
+        return view(&quot;welcome_message&quot;, $data);
+    }
+}
+</code></pre>
     <br>
     open your <b>app\Views\welcome_message.php</b>
     <br>
@@ -164,3 +176,5 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </code></pre>
 
 <h2>License</h2>
+
+<p>The package is released under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE">LICENSE</a> file for more detail.</p>
