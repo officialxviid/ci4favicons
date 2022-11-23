@@ -28,7 +28,7 @@ Inspired by <a href="https://github.com/letrunghieu/favicon" rel="nofollow"><cod
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
 
-<br><br>
+<br>
 
 <h2>Introduction</h2>
 
@@ -45,6 +45,16 @@ Inspired by <a href="https://github.com/letrunghieu/favicon" rel="nofollow"><cod
   <li><code>ci4favicon:generate</code> to generate favicon.</li>
   <li><code>ci4favicon:help</code> to show help.</li>
   <li><code>ci4favicon:credit</code> to display credit information.</li>
+</ul>
+
+<h3>Basic Constant</h3>
+<ul>
+  <li><code>ROOTPATH</code> is <b>your_project/</b>.</li>
+  <li><code>FCPATH</code> is <b>your_project/public/</b>.</li>
+  <li><code>APP_NAMESPACE</code> is <b>your_project/app/</b>.</li>
+  <li><code>COMPOSER_PATH</code> is <b>your_project/vendor/autoload.php</b>.</li>
+  <li><code>__DIR__</code> is a "magic constant" in PHP 5.3 or above which always refers to the current directory of the file from which it is called.</li>
+  <li><code>__FILE__</code> is simply the name of the current file.</li>
 </ul>
 
 <h2>Getting Started</h2>
