@@ -24,7 +24,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </blockquote>
 
 <p align="center">
-  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="#License">License</a>
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#getting-started">Getting Started</a>&nbsp;|&nbsp;<a href="#license">License</a>
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
@@ -33,7 +33,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 
 <h2>Introduction</h2>
 
-<h3>Overview</h3>
+<h3>👁️ Overviews</h3>
 <p>It supports:</p>
 <ul>
   <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
@@ -41,14 +41,27 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </ul>
 <p>Language supports: English (en), Indonesian (id), Japanese (ja), Russian (ru), German (de), Spanish (es), Turkish (tr), Simplified Chinese (zh), Persian (fa)</p>
 
-<h3>Basic Commands</h3>
+<h3>🧰 Requirements</h3>
+<p>CI4Favicon has the following requirements:</p>
+<ul>
+  <li>PHP 7.4+</li>
+  <li>CodeIgniter Framework</li>
+</ul>
+<p>Depending on the chosen Image implementation, you may need one of the following PHP extensions:</p>
+<ul>
+  <li>GD2</li>
+  <li>Imagick (with ImageMagick version 6.2.9 or later, except version 7.0.7-32)</li>
+  <li>Gmagick</li>
+</ul>
+
+<h3>💻 Basic Commands</h3>
 <ul>
   <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
   <li><code>ci4favicon:generate</code> to generate favicon.</li>
   <li><code>ci4favicon:help</code> to show help.</li>
 </ul>
 
-<h3>Basic Constant</h3>
+<h3>💠 Basic Constants</h3>
 <ul>
   <li><code>ROOTPATH</code> is <b>📁 your_project/</b>.</li>
   <li><code>FCPATH</code> is <b>📁 your_project/public/</b>.</li>
@@ -58,12 +71,12 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>__FILE__</code> is simply the name of the current file.</li>
 </ul>
 
-<h2>Guidelines</h2>
+<h2>Getting Started</h2>
 
-<h3>Preparation</h3>
-<p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
+<h3>🎁 Preparation</h3>
+<p>Use high-quality PNG files for good results. I recommend the minimum size is 512x512 px.</p>
 
-<h3>Installation</h3>
+<h3>📥 Installation</h3>
 <p>We need <a href="http://php.net/manual/en/book.imagick.php" target="_blank">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php" target="_blank">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
 <p><b>Installation Using Composer</b></p>
 <p>Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:</p>
@@ -79,17 +92,17 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 ];
 </code></pre>
 
-<h3>Publishing</h3>
+<h3>🚀 Publishing</h3>
 <p>To copy files within a project using robust detection and error checking, run the following command:</p>
 <pre><code class="lang-bash"><span class="hljs-selector-tag">php</span> <span class="hljs-selector-tag">spark</span> <span class="hljs-selector-tag">ci4favicon</span><span class="hljs-selector-pseudo">:publish</span>
 </code></pre>
 <p>This will generate <b>App\Config\CI4Favicon.php</b></p>
 
-<h3>Configuration</h3>
+<h3>⚙️ Config</h3>
 <p>Configure your <b>App\Config\CI4Favicon.php</b></p>
 <ul>
-  <li><code>$input</code>: The PNG file that you prepared earlier. The start of this path is <code>ROOTPATH</code>.</li>
-  <li><code>$output</code>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
+  <li><code>$input</code>: Path to the input image files, which is required</li>
+  <li><code>$output</code>: Path to the folder which contains output files. If this folder does not exist, the package will try to create it. This argument is optional, default value is current folder.</li>
   <li><code>$appName</code>: Set the application name in the <b>manifest.json</b> file. Default is an empty string.</li>
   <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor" target="_blank">Tile Color</a>.</li>
   <li><code>$browserConfigFile</code>: The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <b>browserconfig.xml</b> file. If you have a browser configuration, put the file in the public folder.</li>
@@ -100,13 +113,13 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>$noMs</code>: Exclude images for Windows tile</li>
 </ul>
 
-<h3>Generate</h3>
+<h3>🪄 Generate</h3>
 <p>Once you have configured it, run this command to generate the favicon:</p>
 <pre><code class="lang-bash">php spark ci4favicon:<span class="hljs-keyword">generate</span>
 </code></pre>
 <p>This will output the resulting favicon in your <code>$output</code>.</p>
 
-<h3>Output</h3>
+<h3>🌐 Output</h3>
 <p>To produce HTML Tag output, there are 2 ways you can do it.</p>
 <ul>
   <li>
