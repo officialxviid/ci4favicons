@@ -88,8 +88,8 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <h3>Configuration</h3>
 <p>Configure your <b>App\Config\CI4Favicon.php</b></p>
 <ul>
-  <li><code>$input</code>: The PNG file that you prepared earlier. The start of this path is <code>ROOTPATH</code>.</li>
-  <li><code>$output</code>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
+  <li><code>$input</code>: Path to the input image files, which is required</li>
+  <li><code>$output</code>: Path to the folder which contains output files. If this folder does not exist, the package will try to create it. This argument is optional, default value is current folder.</li>
   <li><code>$appName</code>: Set the application name in the <b>manifest.json</b> file. Default is an empty string.</li>
   <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor" target="_blank">Tile Color</a>.</li>
   <li><code>$browserConfigFile</code>: The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <b>browserconfig.xml</b> file. If you have a browser configuration, put the file in the public folder.</li>
