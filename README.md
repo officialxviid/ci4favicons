@@ -33,7 +33,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 
 <h2>Introduction</h2>
 
-<h3>Overview</h3>
+<h3>👁️ Overviews</h3>
 <p>It supports:</p>
 <ul>
   <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
@@ -41,14 +41,14 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </ul>
 <p>Language supports: English (en), Indonesian (id), Japanese (ja), Russian (ru), German (de), Spanish (es), Turkish (tr), Simplified Chinese (zh), Persian (fa)</p>
 
-<h3>Basic Commands</h3>
+<h3>💻 Basic Commands</h3>
 <ul>
   <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
   <li><code>ci4favicon:generate</code> to generate favicon.</li>
   <li><code>ci4favicon:help</code> to show help.</li>
 </ul>
 
-<h3>Basic Constant</h3>
+<h3>💠 Basic Constants</h3>
 <ul>
   <li><code>ROOTPATH</code> is <b>📁 your_project/</b>.</li>
   <li><code>FCPATH</code> is <b>📁 your_project/public/</b>.</li>
@@ -60,10 +60,10 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 
 <h2>Guidelines</h2>
 
-<h3>Preparation</h3>
+<h3>🎁 Preparation</h3>
 <p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
 
-<h3>Installation</h3>
+<h3>📥 Installation</h3>
 <p>We need <a href="http://php.net/manual/en/book.imagick.php" target="_blank">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php" target="_blank">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
 <p><b>Installation Using Composer</b></p>
 <p>Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:</p>
@@ -79,13 +79,13 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 ];
 </code></pre>
 
-<h3>Publishing</h3>
+<h3>🚀 Publishing</h3>
 <p>To copy files within a project using robust detection and error checking, run the following command:</p>
 <pre><code class="lang-bash"><span class="hljs-selector-tag">php</span> <span class="hljs-selector-tag">spark</span> <span class="hljs-selector-tag">ci4favicon</span><span class="hljs-selector-pseudo">:publish</span>
 </code></pre>
 <p>This will generate <b>App\Config\CI4Favicon.php</b></p>
 
-<h3>Configuration</h3>
+<h3>⚙️ Config</h3>
 <p>Configure your <b>App\Config\CI4Favicon.php</b></p>
 <ul>
   <li><code>$input</code>: Path to the input image files, which is required</li>
@@ -100,13 +100,13 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li><code>$noMs</code>: Exclude images for Windows tile</li>
 </ul>
 
-<h3>Generate</h3>
+<h3>🪄 Generate</h3>
 <p>Once you have configured it, run this command to generate the favicon:</p>
 <pre><code class="lang-bash">php spark ci4favicon:<span class="hljs-keyword">generate</span>
 </code></pre>
 <p>This will output the resulting favicon in your <code>$output</code>.</p>
 
-<h3>Output</h3>
+<h3>🌐 Output</h3>
 <p>To produce HTML Tag output, there are 2 ways you can do it.</p>
 <ul>
   <li>
