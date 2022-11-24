@@ -41,7 +41,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </ul>
 <p>Language supports: English (en), Indonesian (id), Japanese (ja), Russian (ru), German (de), Spanish (es), Turkish (tr), Simplified Chinese (zh), Persian (fa)</p>
 
-<h3>🧰 Requires</h3>
+<h3>🧰 Requirements</h3>
 <p>CI4Favicon has the following requirements:</p>
 <ul>
   <li>PHP 7.4+</li>
@@ -74,7 +74,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <h2>Getting Started</h2>
 
 <h3>🎁 Preparation</h3>
-<p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
+<p>Use high-quality PNG files for good results. I recommend the minimum size is 512x512 px.</p>
 
 <h3>📥 Installation</h3>
 <p>We need <a href="http://php.net/manual/en/book.imagick.php" target="_blank">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php" target="_blank">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
