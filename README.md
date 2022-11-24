@@ -1,154 +1,180 @@
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f1db086732f08de88d73a7a45299fe7addc0d308cb98d867.png)
+<h1 align="center">
+  <a href="https://github.com/officialxviid/ci4favicon">
+    <img src="https://raw.githubusercontent.com/officialxviid/officialxviid/main/assets/ci4favicon/logo-symbol.png" width="250"/>
+  </a>
+  <br>
+  CI4Favicon
+</h1>
 
-![](https://img.shields.io/badge/status-coming%20soon-orange) ![](https://img.shields.io/badge/type-plugins-ff69b4) [![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE)   
-[![Facebook](https://img.shields.io/static/v1?label=Facebook&message=share&style=social&logo=facebook)](https://www.facebook.com/share.php?u=https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon&utm_medium=btn&utm_content=blog) [![Twitter](https://img.shields.io/static/v1?label=Twitter&message=share&style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CI4Favicon&url=https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon) [![WhatsApp](https://img.shields.io/static/v1?label=WhatsApp&message=share&style=social&logo=whatsapp)](https://api.whatsapp.com/send/?text=CI4Favicon+https%3A%2F%2Fgithub.com%2Fofficialxviid%2Fci4favicon&type=custom_url&app_absent=0)
+<h4 align="center">Auto generate favicons and HTML tags from a original PNG file</h4>
 
-## Get Started
+<p align="center">
+  <a href="https://github.com/officialxviid/ci4favicon/releases" rel="nofollow">
+    <img src="https://img.shields.io/badge/status-develop-orange" alt="Status" data-canonical-src="https://img.shields.io/badge/status-develop-orange" style="max-width:100%;">
+  </a>
+  <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
+  <a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE" target="_blank" rel="nofollow">
+    <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
+    </a>
+</p>
 
-### 👁️ Overview
+<blockquote align="center">
+This plugin will help you (CodeIgniter developer) to display the correct favicon for your website with just one original PNG image.
+</blockquote>
 
-Auto generate favicons and HTML tags from a original PNG file.
+<p align="center">
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="#License">License</a>
+</p>
 
-Inspired by [`letrunghieu/favicon`](https://github.com/letrunghieu/favicon), this plugin will help you (_**CodeIgniter developer**_) to display the correct favicon for your website with just one original PNG image.
+<h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
 
-In more details, it supports:
+<br>
 
-*   Create **one** ICO file and **many** PNG files with many favicon sizes from just **one** original PNG image as well as a `manifest.json` file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.
-*   Generate suitable `meta` and `link` tags for desktop web browsers as well as mobile touch devices to properly display favicon.
+<h2>Introduction</h2>
 
-### 🧠 Basic Commands
+<h3>Overview</h3>
+<p>It supports:</p>
+<ul>
+  <li>Create one ICO file and many PNG files with many favicon sizes from just one original PNG image as well as a <code>manifest.json</code> file for Android devices. Both input file path and output folder (which contains images and json files) are configurable via a command line interface.</li>
+  <li>Generate suitable <code>meta</code> and <code>link</code> tags for desktop web browsers as well as mobile touch devices to properly display favicon.</li>
+</ul>
+<p>Language supports: English (en), Indonesian (id), Japanese (ja), Russian (ru), German (de), Spanish (es), Turkish (tr), Simplified Chinese (zh), Persian (fa)</p>
 
-*   **ci4favicon:publish** to start and copy the CI4Favicon Config file to your application.
-*   **ci4favicon:generate** to generate favicon
-*   **ci4favicon:help** to show help
-*   **ci4favicon:credit** to display credit information
+<h3>Basic Commands</h3>
+<ul>
+  <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
+  <li><code>ci4favicon:generate</code> to generate favicon.</li>
+  <li><code>ci4favicon:help</code> to show help.</li>
+</ul>
 
-### 📂 Basic Constants
+<h3>Basic Constant</h3>
+<ul>
+  <li><code>ROOTPATH</code> is <b>📁 your_project/</b>.</li>
+  <li><code>FCPATH</code> is <b>📁 your_project/public/</b>.</li>
+  <li><code>APP_NAMESPACE</code> is <b>📁 your_project/app/</b>.</li>
+  <li><code>COMPOSER_PATH</code> is <b>📁 your_project/vendor/autoload.php</b>.</li>
+  <li><code>__DIR__</code> is a "magic constant" in PHP 5.3 or above which always refers to the current directory of the file from which it is called.</li>
+  <li><code>__FILE__</code> is simply the name of the current file.</li>
+</ul>
 
-*   **ROOTPATH** is `your_project/`
-*   **FCPATH** is `your_project/public/`
-*   **APP\_NAMESPACE** is `your_project/app/`
-*   **COMPOSER\_PATH** is `your_project/vendor/autoload.php`
-*   **\_\_DIR\_\_** is a "magic constant" in PHP 5.3 or above which always refers to the current directory of the file from which it is called.
-*   **\_\_FILE\_\_** is simply the name of the current file.
+<h2>Guidelines</h2>
 
----
+<h3>Preparation</h3>
+<p>Use high-quality PNG files for good results. I recommend that the minimum size is 512x512 px.</p>
 
-## How To Use
-
-### ✨ Preparation
-
-Prepare your PNG file with high quality. 
-
-> I recommend the PNG file is a box with a minimum size of 512 x 512 px.
-
-### ⚙️ Installation
-
-We need [PHP imagick extension](http://php.net/manual/en/book.imagick.php) or [PHP GD extension](http://php.net/manual/en/book.image.php) for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD ~via command line option~ if available.
-
-#### Installation Using Composer
-
-Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:
-
-```plaintext
-composer require officialxviid/ci4favicon
-```
-
-This will add the latest stable release of **OfficialXVIID:CI4Favicon** as a module to your project.
-
-#### Manual Installation
-
-Should you choose not to use Composer to install, you can clone or download this repo and then enable it by editing **app/Config/Autoload.php** and adding the `OfficialXVIID\CI4Favicon` namespace to the `$psr4` array. For example, if you copied it into **app/ThirdParty/**:
-
-```php
-$psr4 = [
-    'Config'                      => APPPATH . 'Config',
-    APP_NAMESPACE                 => APPPATH,
-    'App'                         => APPPATH,
-    'OfficialXVIID\CI4Favicon'    => APPPATH . 'ThirdParty/ci4favicon-1.0/src',
+<h3>Installation</h3>
+<p>We need <a href="http://php.net/manual/en/book.imagick.php" target="_blank">PHP imagick extension</a> or <a href="http://php.net/manual/en/book.image.php" target="_blank">PHP GD extension</a> for generating images. By default, the Imagick extension is loaded, if you cannot install it, you can switch to using GD <s>via command line option</s> if available.</p>
+<p><b>Installation Using Composer</b></p>
+<p>Installation is best done via Composer. Assuming Composer is installed globally, you may use the following command:</p>
+<pre><code class="lang-bash"><span class="hljs-symbol">composer</span> <span class="hljs-meta">require</span> officialxviid/ci4favicon
+</code></pre>
+<p><b>Manual Installation</b></p>
+<p>Should you choose not to use Composer to install, you can clone or download this repo and then enable it by editing <b>app/Config/Autoload.php</b> and adding the <b>OfficialXVIID\CI4Favicon</b> namespace to the <code>$psr4</code> array. For example, if you copied it into <b>app/ThirdParty/</b>:</p>
+<pre><code class="lang-php">$psr4 = [
+    <span class="hljs-string">'Config'</span>                      =&gt; APPPATH . <span class="hljs-string">'Config'</span>,
+    APP_NAMESPACE                 =&gt; APPPATH,
+    <span class="hljs-string">'App'</span>                         =&gt; APPPATH,
+    <span class="hljs-string">'OfficialXVIID\CI4Favicon'</span>    =&gt; APPPATH . <span class="hljs-string">'ThirdParty/ci4favicon-1.0.0/src'</span>,
 ];
-```
+</code></pre>
 
-### 🚀 Publishing
+<h3>Publishing</h3>
+<p>To copy files within a project using robust detection and error checking, run the following command:</p>
+<pre><code class="lang-bash"><span class="hljs-selector-tag">php</span> <span class="hljs-selector-tag">spark</span> <span class="hljs-selector-tag">ci4favicon</span><span class="hljs-selector-pseudo">:publish</span>
+</code></pre>
+<p>This will generate <b>App\Config\CI4Favicon.php</b></p>
 
-To start CI4Favicon, run the command:
+<h3>Configuration</h3>
+<p>Configure your <b>App\Config\CI4Favicon.php</b></p>
+<ul>
+  <li><code>$input</code>: The PNG file that you prepared earlier. The start of this path is <code>ROOTPATH</code>.</li>
+  <li><code>$output</code>: Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</li>
+  <li><code>$appName</code>: Set the application name in the <b>manifest.json</b> file. Default is an empty string.</li>
+  <li><code>$tileColor</code>: The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor" target="_blank">Tile Color</a>.</li>
+  <li><code>$browserConfigFile</code>: The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <b>browserconfig.xml</b> file. If you have a browser configuration, put the file in the public folder.</li>
+  <li><code>$ico64</code>: Include the 64x64 image inside the output ICO file (which contains only 16x16 and 32x32 images by default)</li>
+  <li><code>$ico48</code>: Include the 48x48 image inside the output ICO file (which contains only 16x16 and 32x32 images by default).</li>
+  <li><code>$noOldApple</code>: Exclude pngs files that used by old Apple touch devices.</li>
+  <li><code>$noAndroid</code>: Exclude <b>manifest.json</b> files and PNG files for Android devices</li>
+  <li><code>$noMs</code>: Exclude images for Windows tile</li>
+</ul>
 
-```plaintext
-php spark ci4favicon:publish
-```
+<h3>Generate</h3>
+<p>Once you have configured it, run this command to generate the favicon:</p>
+<pre><code class="lang-bash">php spark ci4favicon:<span class="hljs-keyword">generate</span>
+</code></pre>
+<p>This will output the resulting favicon in your <code>$output</code>.</p>
 
-This will generate **App\\Config\\CI4Favicon.php**
-
-### 🔧 Configuration
-
-Configure your **App\\Config\\CI4Favicon.php** to your liking.
-
-<table><tbody><tr><td><strong>Property</strong></td><td><strong>Type</strong></td><td><strong>Description</strong></td><td><strong>Default</strong></td><td><strong>Example</strong></td></tr><tr><td>$appName</td><td>string</td><td>Set the application name in the <code>manifest.json</code> file. Default is an empty string.</td><td>""</td><td>“My Awesome App”</td></tr><tr><td>$input</td><td>string</td><td>The PNG file that you prepared earlier. The start of this path is ROOTPATH.</td><td>“logo.png”</td><td>"writable/dist/favicon/my-logo.png"</td></tr><tr><td>$output</td><td>string</td><td>Your favicon output path. Navigate this path to your FCPATH or public path. If you do not fill in this field, by default it will point to FCPATH or public folder.</td><td>“”</td><td>“assets/favicons/”</td></tr><tr><td>$tileColor</td><td>string</td><td>The background of live tile when this site is pinned. Fill in a HEX color for your <a href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-helpandsupport-helpandsupport-tilecolor">Tile Color</a>.</td><td>“”</td><td>“EC1D00”</td></tr><tr><td>$browserConfigFile</td><td>string</td><td>The path to browser config XML file if you have it. By default, it is set to an empty string to prevent IE from auto looking <code>browserconfig.xml</code> file. If you have a browser configuration, put the file in the public folder.</td><td>“”</td><td>“IEConfig.xml”</td></tr><tr><td>$useIcon64</td><td>bool</td><td>Include the 64x64 image inside the output ICO file (which contains only 16x16 and 32x32 images by default)</td><td>true</td><td>true</td></tr><tr><td>$useIcon48</td><td>bool</td><td>Include the 48x48 image inside the output ICO file (which contains only 16x16 and 32x32 images by default).</td><td>true</td><td>true</td></tr><tr><td>$noOldApple</td><td>bool</td><td>exclude pngs files that used by old Apple touch devices</td><td>false</td><td>false</td></tr><tr><td>$noAndroid</td><td>bool</td><td>exclude <code>manifest.json</code> files and PNG files for Android devices</td><td>false</td><td>false</td></tr><tr><td>$noMs</td><td>bool</td><td>exclude images for Windows tile</td><td>false</td><td>false</td></tr></tbody></table>
-
-### 🪄 Generate
-
-Once you have configured it, run this command to generate the favicon:
-
-```plaintext
-php spark ci4favicon:generate
-```
-
-### ✨ Output
-
-```html
-<!DOCTYPE html>
-
-	<html lang="en">
-
-	<head>
+<h3>Output</h3>
+<p>To produce HTML Tag output, there are 2 ways you can do it.</p>
+<ul>
+  <li>
+    <b>Send variables from Controllers to Views.</b>
+    <br>
+    open your <b>app\Controllers\Home.php</b>
+    <br>
+    <pre><code class="language-php">&lt;?php
+namespace App\Controllers;
+use OfficialXVIID\CI4Favicon\CI4Favicon;
+class Home extends BaseController{
+    public function index(){
+        $favicon = new CI4Favicon();
+        $favicon-&gt;output();
+        $data['favicon'] = $favicon;
+        return view('welcome_message', $data);
+    }
+    
+}</code></pre>
+    <br>
+    open your <b>app\Views\welcome_message.php</b>
+    <br>
+    <pre><code class="lang-html">    &lt;head&gt;
         ...
-        <?php
+        &lt;?= $favicon; ?&gt;
+        ...
+    &lt;/head&gt;</code></pre>
+    <br>
+  </li>
+  <li>
+    <b>Using helpers.</b>
+    <br>
+    open your <b>app\Views\welcome_message.php</b>
+    <br>
+    <pre><code class="lang-html">    &lt;head&gt;
+        ...
+        &lt;?php
         	helper('ci4favicon');
         	echo ci4favicon();
-        ?>
+        ?&gt;
         ...
-    </head>
-    <body>
-        
-    </body>
-</html>
-```
+    &lt;/head&gt;</code></pre>
+  </li>
+</ul>
 
-is a HTML segment link this:
+<p><b>HTML Tag Result:</b></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-config"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/IEConfig.xml"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"57x57"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-57x57.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"60x60"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-60x60.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"72x72"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-72x72.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"114x114"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-114x114.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"76x76"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-76x76.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"120x120"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-120x120.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"152x152"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-152x152.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"apple-touch-icon"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"180x180"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/apple-touch-icon-180x180.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon-32x32.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"32x32"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/android-chrome-192x192.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"192x192"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/png"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon-16x16.png"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"16x16"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"manifest"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/manifest.json"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"application-name"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Hieu Le Favicon"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileColor"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"#F0F0F0"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileImage"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-144x144.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square70x70logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-70x70.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square150x150logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-150x150.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-wide310x150logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-310x150.png"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-square310x310logo"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"/mstile-310x310.png"</span> /&gt;</span>
+</code></pre>
 
-```php
-<meta name="msapplication-config" content="/IEConfig.xml" />
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-<link rel="manifest" href="/manifest.json" />
-<meta name="application-name" content="Hieu Le Favicon" />
-<meta name="msapplication-TileColor" content="#F0F0F0" />
-<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
-```
+<h2>License</h2>
 
----
-
-## Donate
-
-Come support us to be even better!
-
-[![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-buymeacoffee.com-logotext.png)](https://www.buymeacoffee.com/officialxviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-opencollective.com-logotext.png)](https://opencollective.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-patreon.com-logotext.png)](https://www.patreon.com/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-paypal.me-logotext.png)](https://paypal.me/xviid)  [![](https://raw.githubusercontent.com/officialxviid/ci4favicon/main/dist/images/sponsors/qr/covers/200px/style1-trakteer.id-logotext.png)](https://trakteer.id/xviid)
-
----
-
-## License
-
-[**MIT License**](https://github.com/officialxviid/ci4favicon/blob/main/LICENSE).
+<p>CI4Favicon is under <b>MIT License</b>. See the <a href="https://github.com/officialxviid/disgester/blob/master/LICENSE" target="_blank">LICENSE</a> file for more detail.</p>
