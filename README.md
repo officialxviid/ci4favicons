@@ -41,6 +41,19 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </ul>
 <p>Language supports: English (en), Indonesian (id), Japanese (ja), Russian (ru), German (de), Spanish (es), Turkish (tr), Simplified Chinese (zh), Persian (fa)</p>
 
+<h3>🧰 Requires</h3>
+<p>CI4Favicon has the following requirements:</p>
+<ul>
+  <li>PHP 7.4+</li>
+  <li>CodeIgniter Framework</li>
+</ul>
+<p>Depending on the chosen Image implementation, you may need one of the following PHP extensions:</p>
+<ul>
+  <li>GD2</li>
+  <li>Imagick (with ImageMagick version 6.2.9 or later, except version 7.0.7-32)</li>
+  <li>Gmagick</li>
+</ul>
+
 <h3>💻 Basic Commands</h3>
 <ul>
   <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
