@@ -54,21 +54,20 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
   <li>Gmagick</li>
 </ul>
 
+<h3>📏 Sizes</h3>
+<p>CI4Favicon generates the following sizes:</p>
+<ul>
+  <li><b>favicon:</b> 16x16, 32x32 and 96x96.</li>
+  <li><b>android-chrome:</b> 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192.</li>
+  <li><b>mstile:</b> 70x70, 144x144, 150x150, 310x310 and 310x150.</li>
+  <li><b>apple-touch-icon:</b> 57x57, 60x60, 72x72, 76x76, 114x114, 120x120, 152x152 and 180x180.</li>
+</ul>
+
 <h3>💻 Basic Commands</h3>
 <ul>
   <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
   <li><code>ci4favicon:generate</code> to generate favicon.</li>
   <li><code>ci4favicon:help</code> to show help.</li>
-</ul>
-
-<h3>💠 Basic Constants</h3>
-<ul>
-  <li><code>ROOTPATH</code> is <b>📁 your_project/</b>.</li>
-  <li><code>FCPATH</code> is <b>📁 your_project/public/</b>.</li>
-  <li><code>APP_NAMESPACE</code> is <b>📁 your_project/app/</b>.</li>
-  <li><code>COMPOSER_PATH</code> is <b>📁 your_project/vendor/autoload.php</b>.</li>
-  <li><code>__DIR__</code> is a "magic constant" in PHP 5.3 or above which always refers to the current directory of the file from which it is called.</li>
-  <li><code>__FILE__</code> is simply the name of the current file.</li>
 </ul>
 
 <h2>Getting Started</h2>
