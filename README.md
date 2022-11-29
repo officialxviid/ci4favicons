@@ -24,7 +24,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </blockquote>
 
 <p align="center">
-  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#getting-started">Getting Started</a>&nbsp;|&nbsp;<a href="#license">License</a>
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#getting-started">Getting Started</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/wiki/Docs">Docs</a>&nbsp;|&nbsp;<a href="#license">License</a>
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
@@ -45,13 +45,8 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <p>CI4Favicon has the following requirements:</p>
 <ul>
   <li>PHP 7.4+</li>
+  <li>PHP GD</li>
   <li>CodeIgniter Framework</li>
-</ul>
-<p>Depending on the chosen Image implementation, you may need one of the following PHP extensions:</p>
-<ul>
-  <li>GD2</li>
-  <li>Imagick (with ImageMagick version 6.2.9 or later, except version 7.0.7-32)</li>
-  <li>Gmagick</li>
 </ul>
 
 <h3>📏 Sizes</h3>
