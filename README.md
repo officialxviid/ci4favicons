@@ -1,20 +1,20 @@
 <h1 align="center">
-  <a href="https://github.com/officialxviid/ci4favicon">
-    <img src="https://raw.githubusercontent.com/officialxviid/officialxviid/main/assets/ci4favicon/logo-symbol.png" width="250"/>
+  <a href="https://github.com/officialxviid/ci4favicons">
+    <img src="https://raw.githubusercontent.com/officialxviid/officialxviid/main/assets/ci4favicons/logo-symbol.png" width="250"/>
   </a>
   <br>
-  CI4Favicon
+  CI4Favicons
 </h1>
 
 <h4 align="center">Auto generate favicons and HTML tags from a original PNG file</h4>
 
 <p align="center">
-  <a href="https://github.com/officialxviid/ci4favicon/releases" rel="nofollow">
+  <a href="https://github.com/officialxviid/ci4favicons/releases" rel="nofollow">
     <img src="https://img.shields.io/badge/status-develop-orange" alt="Status" data-canonical-src="https://img.shields.io/badge/status-develop-orange" style="max-width:100%;">
   </a>
   <img src="https://img.shields.io/badge/language-9-blueviolet" alt="Languages" data-canonical-src="https://img.shields.io/badge/language-9-blueviolet" style="max-width:100%;">
   <img src="https://img.shields.io/badge/sponsors-8-ff69b4" alt="Sponsors" data-canonical-src="https://img.shields.io/badge/sponsors-8-ff69b4" style="max-width:100%;">
-  <a href="https://github.com/officialxviid/ci4favicon/blob/master/LICENSE" target="_blank" rel="nofollow">
+  <a href="https://github.com/officialxviid/ci4favicons/blob/master/LICENSE" target="_blank" rel="nofollow">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue" style="max-width:100%;">
     </a>
 </p>
@@ -24,7 +24,7 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 </blockquote>
 
 <p align="center">
-  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#getting-started">Getting Started</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicon/wiki/Docs">Docs</a>&nbsp;|&nbsp;<a href="#license">License</a>
+  <a href="#introduction">Introductions</a>&nbsp;|&nbsp;<a href="#getting-started">Getting Started</a>&nbsp;|&nbsp;<a href="https://github.com/officialxviid/ci4favicons/wiki/Docs">Docs</a>&nbsp;|&nbsp;<a href="#license">License</a>
 </p>
 
 <h5 align="center">Powered by <a href="https://xviid.net" target="_blank">XVIID</a></h5>
@@ -52,17 +52,18 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <h3>📏 Sizes</h3>
 <p>CI4Favicon generates the following sizes:</p>
 <ul>
-  <li><b>favicon:</b> 16x16, 32x32 and 96x96.</li>
-  <li><b>android-chrome:</b> 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192.</li>
-  <li><b>mstile:</b> 70x70, 144x144, 150x150, 310x310 and 310x150.</li>
-  <li><b>apple-touch-icon:</b> 57x57, 60x60, 72x72, 76x76, 114x114, 120x120, 152x152 and 180x180.</li>
+  <li><b>favicon: </b>16x16, 32x32, 96x96</li>
+  <li><b>android-icon: </b>36x36, 48x48, 72x72, 96x96, 144x144, 192x192</li>
+  <li><b>apple-icon: </b>57x57, 60x60, 72x72, 114x114, 76x76, 120x120, 152x152, 180x180</li>
+  <li><b>apple-startup: </b>320x460, 640x920, 640x1096, 748x1024, 750x1024, 750x1294, 768x1004, 1182x2208, 1242x2148, 1496x2048, 1536x2008</li>
+  <li><b>msapplication: </b>144x144, 70x70, 150x150, 310x150, 310x310</li>
 </ul>
 
 <h3>💻 Basic Commands</h3>
 <ul>
-  <li><code>ci4favicon:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
-  <li><code>ci4favicon:generate</code> to generate favicon.</li>
-  <li><code>ci4favicon:help</code> to show help.</li>
+  <li><code>ci4favicons:publish</code> to start and copy the CI4Favicon Config file to your application.</li>
+  <li><code>ci4favicons:generate</code> to generate favicon.</li>
+  <li><code>ci4favicons:help</code> to show help.</li>
 </ul>
 
 <h2>Getting Started</h2>
@@ -79,10 +80,10 @@ This plugin will help you (CodeIgniter developer) to display the correct favicon
 <p><b>Manual Installation</b></p>
 <p>Should you choose not to use Composer to install, you can clone or download this repo and then enable it by editing <b>app/Config/Autoload.php</b> and adding the <b>OfficialXVIID\CI4Favicon</b> namespace to the <code>$psr4</code> array. For example, if you copied it into <b>app/ThirdParty/</b>:</p>
 <pre><code class="lang-php">$psr4 = [
-    <span class="hljs-string">'Config'</span>                      =&gt; APPPATH . <span class="hljs-string">'Config'</span>,
-    APP_NAMESPACE                 =&gt; APPPATH,
-    <span class="hljs-string">'App'</span>                         =&gt; APPPATH,
-    <span class="hljs-string">'OfficialXVIID\CI4Favicon'</span>    =&gt; APPPATH . <span class="hljs-string">'ThirdParty/ci4favicon-1.0.0/src'</span>,
+    <span class="hljs-string">'Config'</span>           =&gt; APPPATH . <span class="hljs-string">'Config'</span>,
+    APP_NAMESPACE      =&gt; APPPATH,
+    <span class="hljs-string">'App'</span>              =&gt; APPPATH,
+    <span class="hljs-string">'XVIID\CI4Favicons'</span> =&gt; APPPATH . <span class="hljs-string">'ThirdParty/ci4favicons-1.0.0/src'</span>,
 ];
 </code></pre>
 
