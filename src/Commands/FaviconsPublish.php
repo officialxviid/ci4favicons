@@ -13,7 +13,7 @@ class FaviconsPublish extends BaseCommand
     protected $description = 'CI4Favicons config file publisher.';
 
     /**
-     * The path to Daycry\RestServer\src directory.
+     * The path to OfficialXVIID\CI4Favicons\src directory.
      *
      * @var string
      */
