@@ -17,7 +17,7 @@ class FaviconsException extends \RuntimeException implements ExceptionInterface
     /**
      * Invalid Image Name 
      */
-    public static function invalidImageName()
+    public static function forInvalidImageName()
     {
         return new static(lang('Favicons.invalidImageName'));
     }
