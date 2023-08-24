@@ -35,7 +35,7 @@ abstract class BaseFavicons
      * Microsoft
      * @link https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg491740(v=vs.85)?redirectedfrom=MSDN
      */
-    private static array $_sizes = [
+    protected static array $sizes = [
         'favicon-16x16.png'            => 16,
         'favicon-32x32.png'            => 32,
         'favicon-96x96.png'            => 96,
@@ -64,7 +64,7 @@ abstract class BaseFavicons
     /**
      * Ms Tile Settings 
      */
-    private static $_tileSettings = [
+    protected static $tileSettings = [
         'mstile-70x70.png'   => [
             'w'    => 126,
             'h'    => 126,
