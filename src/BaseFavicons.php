@@ -110,6 +110,13 @@ abstract class BaseFavicons
     protected string $output;
 
     /** 
+     * App name
+     * 
+     * @var string 
+     */
+    protected string $appName;
+
+    /** 
      * Imagine
      */
     protected $imagine;
@@ -153,4 +160,9 @@ abstract class BaseFavicons
      * Set output folder
      */
     abstract public function setOutputFolder(string $folder);
+
+    /** 
+     * Set app name
+     */
+    abstract public function setAppName(string $name);
 }
