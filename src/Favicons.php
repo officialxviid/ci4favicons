@@ -57,7 +57,7 @@ class Favicons extends BaseFavicons implements FaviconsInterface
      */
     public static function getSizes($noOldApple = false, $noAndroid = false, $noMs = false): array
     {
-        $result = array_merge(parent::$_sizes, array());
+        $result = array_merge(parent::$sizes, array());
         if ($noOldApple) {
             unset($result['apple-touch-icon-57x57.png']);
             unset($result['apple-touch-icon-60x60.png']);
@@ -90,9 +90,9 @@ class Favicons extends BaseFavicons implements FaviconsInterface
      */
     public static function getTileSettings($name): array
     {
-        if (!isset(parent::$_tileSettings[$name])) {
+        if (!isset(parent::$tileSettings[$name])) {
             throw FaviconsException::forInvalidImageName();
         }
-        return parent::$_tileSettings[$name];
+        return parent::$tileSettings[$name];
     }
 }
