@@ -4,10 +4,26 @@ namespace OfficialXVIID\CI4Favicons;
 
 use Imagine\Gd\Imagine as GdImagine;
 use Imagine\Imagick\Imagine as ImagickImagine;
+use OfficialXVIID\CI4Favicons\Exceptions\FaviconsException;
 use OfficialXVIID\CI4Favicons\Interfaces\FaviconsInterface;
 
 abstract class BaseFavicons implements FaviconsInterface
 {
+    /**
+     * The current version of CI4Favicons
+     */
+    public const CI4FAVICONS_VERSION = '1.0.0';
+
+    /**
+     * CI4Favicons Logo
+     */
+    public const CI4FAVICONS_LOGO = '◠ᴥ◠';
+
+    /**
+     * CI4Favicons Name
+     */
+    public const CI4FAVICONS_NAME = 'CI4Favicons';
+
     /** 
      * Input file
      * 
