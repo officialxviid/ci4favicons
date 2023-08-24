@@ -5,12 +5,56 @@ namespace OfficialXVIID\CI4Favicons\Commands;
 use Config\Autoload;
 use CodeIgniter\CLI\CLI;
 use CodeIgniter\CLI\BaseCommand;
+use OfficialXVIID\CI4Favicons\Traits\FaviconsCommandTrait;
 
 class FaviconsPublish extends BaseCommand
 {
-    protected $group       = 'CI4Favicons';
-    protected $name        = 'ci4favicons:publish';
+    /** 
+     * Use Favicons Command Trait 
+     */
+    use FaviconsCommandTrait;
+
+    /**
+     * The Command's Group
+     *
+     * @var string
+     */
+    protected $group = 'CI4Favicons';
+
+    /**
+     * The Command's Name
+     *
+     * @var string
+     */
+    protected $name = 'ci4favicons:publish';
+
+    /**
+     * The Command's Description
+     *
+     * @var string
+     */
     protected $description = 'CI4Favicons config file publisher.';
+
+    /**
+     * The Command's Usage
+     *
+     * @var string
+     */
+    protected $usage = 'ci4favicons:publish';
+
+    /**
+     * The Command's Arguments
+     *
+     * @var array
+     */
+    protected $arguments = [];
+
+    /**
+     * The Command's Options
+     *
+     * @var array
+     */
+    protected $options = [];
 
     /**
      * The path to OfficialXVIID\CI4Favicons\src directory.
@@ -20,15 +64,23 @@ class FaviconsPublish extends BaseCommand
     protected $sourcePath;
 
     /**
-     * Copy config file
+     * Actually execute a command.
      *
      * @param array $params
      */
     public function run(array $params)
     {
+        // Show Banner
+        $this->showBanner();
+
+        // Determine Source Path
         $this->determineSourcePath();
+
+        // Publish Config
         $this->publishConfig();
-        CLI::write('Config file was successfully generated.', 'green');
+
+        // Completed
+        CLI::write(lang('Favicons.completed'), 'green');
     }
 
     /**
@@ -38,7 +90,8 @@ class FaviconsPublish extends BaseCommand
     {
         $this->sourcePath = realpath(__DIR__ . '/../');
         if ($this->sourcePath == '/' || empty($this->sourcePath)) {
-            CLI::error('Unable to determine the correct source directory. Bailing.');
+            // Unable to determine the correct source directory
+            CLI::error(lang('Favicons.unableToDetermineTheCorrectSourceDirectory'));
             exit();
         }
     }
@@ -66,20 +119,26 @@ class FaviconsPublish extends BaseCommand
         $config = new Autoload();
         $appPath = $config->psr4[APP_NAMESPACE];
         $directory = dirname($appPath . $path);
+        // Check Available Directory
         if (!is_dir($directory)) {
             mkdir($directory, 0777, true);
         }
-        if (file_exists($appPath . $path) && CLI::prompt('Config file already exists, do you want to replace it?', ['y', 'n']) == 'n') {
-            CLI::error('Cancelled');
+        // Config file already exists, do you want to replace it?
+        if (file_exists($appPath . $path) && CLI::prompt(lang('Favicons.alreadyExistConfigFile'), [lang('Favicons.yes'), lang('Favicons.no')]) == lang('Favicons.no')) {
+            // Cancelled
+            CLI::error(lang('Favicons.cancelled'));
             exit();
         }
+
         try {
             write_file($appPath . $path, $content);
         } catch (\Exception $e) {
             $this->showError($e);
             exit();
         }
+
         $path = str_replace($appPath, '', $path);
-        CLI::write(CLI::color('Created: ', 'yellow') . $path);
+        // Created path
+        CLI::write(lang('Favicons.createdPath', [$path]));
     }
 }
