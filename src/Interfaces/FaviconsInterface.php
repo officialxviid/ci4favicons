@@ -37,4 +37,34 @@ interface FaviconsInterface
      * @throws FaviconsException
      */
     public static function getTileSettings($name): array;
+
+    /** 
+     * Enable for generate ico 64 
+     */
+    public function use64Icon();
+
+    /** 
+     * Enable for generate ico 48 
+     */
+    public function use48Icon();
+
+    /** 
+     * Disable for generate all old apple icon
+     */
+    public function noOldApple();
+
+    /** 
+     * Disable for generate android icon
+     */
+    public function noAndroid();
+
+    /** 
+     * Disable for generate Ms icon
+     */
+    public function noMs();
+
+    /** 
+     * Generate Favicon 
+     */
+    public function generate();
 }
