@@ -2,7 +2,9 @@
 
 namespace OfficialXVIID\CI4Favicons;
 
-abstract class BaseFavicons
+use OfficialXVIID\CI4Favicons\Interfaces\FaviconsInterface;
+
+abstract class BaseFavicons implements FaviconsInterface
 {
     /** 
      * Input file
