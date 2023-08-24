@@ -1,5 +1,5 @@
 {
-	"name": "officialxviid/ci4favicon",
+	"name": "officialxviid/ci4favicons",
 	"description": "Auto generate favicons and HTML tags from a PNG file",
 	"type": "library",
 	"keywords": [
@@ -36,80 +36,136 @@
 		"psr-4": {
 			"OfficialXVIID\\CI4Favicon\\": "src/"
 		},
-		"files": ["src/helpers.php"]
+		"files": [
+			"src/helpers.php"
+		]
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0"
 	},
 	"xviid-identifier": {
-		"code"				: "0CoG8kIsmfC",
-		"title"				: "Codeigniter 4 Favicon",
-		"name"				: "CI4Favicon",
-		"version"			: "1.0",
-		"url"				: "https://github.com/officialxviid/ci4favicon",
-		"logo"				: {
-			"asci"			: "◠ᴥ◠   CI4Favicon",
-			"base"			: "/dist/img/logo/base.png",
-			"base-text"		: "/dist/img/logo/base-text.png",
-			"text"			: "/dist/img/logo/text.png",
-			"horizontal"	: "/dist/img/logo/horizontal.png",
-			"vertical"		: "/dist/img/logo/vertical.png"
+		"code": "0CoG8kIsmfC",
+		"title": "Codeigniter 4 Favicon",
+		"name": "CI4Favicon",
+		"version": "1.0",
+		"url": "https://github.com/officialxviid/ci4favicon",
+		"logo": {
+			"asci": "◠ᴥ◠   CI4Favicon",
+			"base": "/dist/img/logo/base.png",
+			"base-text": "/dist/img/logo/base-text.png",
+			"text": "/dist/img/logo/text.png",
+			"horizontal": "/dist/img/logo/horizontal.png",
+			"vertical": "/dist/img/logo/vertical.png"
 		},
-		"company"			: {
-			"name"	: "XVIID",
-			"email"	: "support@xviid.net",
-			"url"	: "https://xviid.net"
+		"company": {
+			"name": "XVIID",
+			"email": "support@xviid.net",
+			"url": "https://xviid.net"
 		},
-		"colors-pallete"	: {
-			"c1lg"	: {
-				"name"	: "Color 1 LG",
-				"hex"	: "FF7A43",
-				"rgb"	: [255, 122, 67],
-        		"cmyk"	: [0, 65, 78, 0]
+		"colors-pallete": {
+			"c1lg": {
+				"name": "Color 1 LG",
+				"hex": "FF7A43",
+				"rgb": [
+					255,
+					122,
+					67
+				],
+				"cmyk": [
+					0,
+					65,
+					78,
+					0
+				]
 			},
-			"c1pk"	: {
-				"name"	: "Color 1 PK",
-				"hex"   : "DD4814",
-				"rgb"   : [221, 72, 20],
-				"cmyk"  : [8, 86, 100, 1]
+			"c1pk": {
+				"name": "Color 1 PK",
+				"hex": "DD4814",
+				"rgb": [
+					221,
+					72,
+					20
+				],
+				"cmyk": [
+					8,
+					86,
+					100,
+					1
+				]
 			},
-			"c1dk"	: {
-				"name"	: "Color 1 DK",
-				"hex"   : "A40800",
-				"rgb"   : [164, 8, 0],
-				"cmyk"  : [23, 100, 100, 20]
+			"c1dk": {
+				"name": "Color 1 DK",
+				"hex": "A40800",
+				"rgb": [
+					164,
+					8,
+					0
+				],
+				"cmyk": [
+					23,
+					100,
+					100,
+					20
+				]
 			},
-			"c2lg"	: {
-				"name"	: "Color 2 LG",
-				"hex"   : "FF5F35",
-				"rgb"   : [255, 95, 53],
-				"cmyk"  : [0, 78, 83, 0]
+			"c2lg": {
+				"name": "Color 2 LG",
+				"hex": "FF5F35",
+				"rgb": [
+					255,
+					95,
+					53
+				],
+				"cmyk": [
+					0,
+					78,
+					83,
+					0
+				]
 			},
-			"c2pk"	: {
-				"name"	: "Color 2 PK",
-				"hex"   : "EC1D00",
-				"rgb"   : [236, 29, 0],
-				"cmyk"  : [1, 99, 100, 1]
+			"c2pk": {
+				"name": "Color 2 PK",
+				"hex": "EC1D00",
+				"rgb": [
+					236,
+					29,
+					0
+				],
+				"cmyk": [
+					1,
+					99,
+					100,
+					1
+				]
 			},
-			"c2dk"	: {
-				"name"	: "Color 2 DK",
-				"hex"   : "B10000",
-				"rgb"   : [177, 0, 0],
-				"cmyk"  : [20, 100, 100, 14]
+			"c2dk": {
+				"name": "Color 2 DK",
+				"hex": "B10000",
+				"rgb": [
+					177,
+					0,
+					0
+				],
+				"cmyk": [
+					20,
+					100,
+					100,
+					14
+				]
 			}
 		},
-		"tutorials"			: {
-			"github"	: "https://github.com/officialxviid/ci4favicon",
-			"youtube"	: "https://youtube.com/"
+		"tutorials": {
+			"github": "https://github.com/officialxviid/ci4favicon",
+			"youtube": "https://youtube.com/"
 		},
-		"license"			: {
-			"name"	: "MIT",
-			"url" 	: "https://github.com/officialxviid/ci4favicon/blob/main/LICENSE"
+		"license": {
+			"name": "MIT",
+			"url": "https://github.com/officialxviid/ci4favicon/blob/main/LICENSE"
 		},
-		"developer"			: {
-			"name"	: "XVIID Developer",
-			"email"	: "developer@xviid.net",
-			"url" 	: "https://xviid.net/"
+		"developer": {
+			"name": "XVIID Developer",
+			"email": "developer@xviid.net",
+			"url": "https://xviid.net/"
 		}
 	}
 }
