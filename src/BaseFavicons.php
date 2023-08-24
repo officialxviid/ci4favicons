@@ -121,6 +121,48 @@ abstract class BaseFavicons
      */
     protected $imagine;
 
+    /** 
+     * Use Ico 64
+     * 
+     * @var bool 
+     */
+    protected bool $ico_64 = false;
+
+    /** 
+     * Use Ico 48
+     * 
+     * @var bool 
+     */
+    protected bool $ico_48 = false;
+
+    /** 
+     * No old apple
+     * 
+     * @var bool 
+     */
+    protected bool $no_old_apple = true;
+
+    /** 
+     * No android
+     * 
+     * @var bool 
+     */
+    protected bool $no_android = true;
+
+    /** 
+     * No ms
+     * 
+     * @var bool 
+     */
+    protected bool $no_ms = true;
+
+    /** 
+     * Browser config file
+     * 
+     * @var string 
+     */
+    protected string $browser_config_file = '';
+
 
     /** 
      * Constructor
@@ -165,4 +207,34 @@ abstract class BaseFavicons
      * Set app name
      */
     abstract public function setAppName(string $name);
+
+    /** 
+     * Set browser config file
+     */
+    abstract public function setBrowserConfigFile(string $file);
+
+    /** 
+     * Use Ico 64
+     */
+    abstract public function useIco64(bool $ico64 = true);
+
+    /** 
+     * Use Ico 48
+     */
+    abstract public function useIco48(bool $ico48 = true);
+
+    /** 
+     * No old apple
+     */
+    abstract public function noOldApple(bool $noOldApple = false);
+
+    /** 
+     * No Android
+     */
+    abstract public function noAndroid(bool $noAndroid = false);
+
+    /** 
+     * No Ms
+     */
+    abstract public function noMs(bool $noMs = false);
 }
