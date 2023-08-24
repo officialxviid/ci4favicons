@@ -22,6 +22,7 @@ interface FaviconsInterface
      * @param bool $noOldApple exclude old Apple touch image sizes
      * @param bool $noAndroid exclude manifest.json file and images for Androids
      * @param bool $noMs exclude images for Windows and IE11 
+     * 
      * @return array
      */
     public static function getSizes($noOldApple = false, $noAndroid = false, $noMs = false): array;
@@ -30,7 +31,9 @@ interface FaviconsInterface
      * Get the settings for Windows tile image size
      * 
      * @param type $name
+     * 
      * @return array
+     * 
      * @throws FaviconsException
      */
     public static function getTileSettings($name): array;
