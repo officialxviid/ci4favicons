@@ -4,13 +4,13 @@ namespace OfficialXVIID\CI4Favicons;
 
 use Imagine\Gd\Imagine as GdImagine;
 use Imagine\Image\Box;
-use Imagine\Image\Fill\FillInterface;
 use Imagine\Image\Palette\RGB;
 use Imagine\Image\Point;
 use Imagine\Imagick\Imagine as ImagickImagine;
 use OfficialXVIID\CI4Favicons\Exceptions\FaviconsException;
+use OfficialXVIID\CI4Favicons\Interfaces\FaviconsInterface;
 
-class BaseFavicons implements FillInterface
+class BaseFavicons implements FaviconsInterface
 {
     /**
      * The current version of CI4Favicons
