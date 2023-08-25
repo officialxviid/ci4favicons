@@ -10,7 +10,7 @@ use Imagine\Image\Point;
 use Imagine\Imagick\Imagine as ImagickImagine;
 use OfficialXVIID\CI4Favicons\Exceptions\FaviconsException;
 
-abstract class BaseFavicons implements FillInterface
+class BaseFavicons implements FillInterface
 {
     /**
      * The current version of CI4Favicons
