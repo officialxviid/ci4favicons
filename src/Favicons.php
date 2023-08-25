@@ -247,53 +247,41 @@ class BaseFavicons implements FaviconsInterface
     /** 
      * Use Ico 64
      */
-    public function useIco64(bool $ico64 = true)
+    public function useIco64()
     {
-        $this->_ico_64 = $ico64;
+        $this->_ico_64 = true;
     }
 
     /** 
      * Use Ico 48
      */
-    public function useIco48(bool $ico48 = true)
+    public function useIco48()
     {
-        $this->_ico_48 = $ico48;
+        $this->_ico_48 = true;
     }
 
     /** 
      * Use old apple
      */
-    public function useOldApple(bool $oldApple = false)
+    public function useOldApple()
     {
-        if ($oldApple) {
-            $this->_no_old_apple = false;
-        } else {
-            $this->_no_old_apple = true;
-        }
+        $this->_no_old_apple = false;
     }
 
     /** 
      * Use Android
      */
-    public function useAndroid(bool $android = false)
+    public function useAndroid()
     {
-        if ($android) {
-            $this->_no_android = false;
-        } else {
-            $this->_no_android = true;
-        }
+        $this->_no_android = false;
     }
 
     /** 
      * Use Ms
      */
-    public function useMs(bool $ms = false)
+    public function useMs()
     {
-        if ($ms) {
-            $this->_no_ms = false;
-        } else {
-            $this->_no_ms = true;
-        }
+        $this->_no_ms = false;
     }
 
 
@@ -312,7 +300,7 @@ class BaseFavicons implements FaviconsInterface
     /** 
      * Get tile color
      */
-    public function getTileColor(string $color)
+    public function getTileColor()
     {
         return $this->_tile_color;
     }
