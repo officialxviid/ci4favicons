@@ -111,75 +111,82 @@ abstract class BaseFavicons implements FillInterface
      * 
      * @var string 
      */
-    protected string $input;
+    private string $_input;
 
     /** 
      * Output folder
      * 
      * @var string 
      */
-    protected string $output;
+    private string $_output;
 
     /** 
      * App name
      * 
      * @var string 
      */
-    protected string $appName;
+    private string $_appName;
 
     /** 
      * Imagine
      */
-    protected $imagine;
+    private $_imagine;
 
     /** 
      * Use Ico 64
      * 
      * @var bool 
      */
-    protected bool $ico_64 = false;
+    private bool $_ico_64 = false;
 
     /** 
      * Use Ico 48
      * 
      * @var bool 
      */
-    protected bool $ico_48 = false;
+    protected bool $_ico_48 = false;
 
     /** 
      * No old apple
      * 
      * @var bool 
      */
-    protected bool $no_old_apple = true;
+    protected bool $_no_old_apple = true;
 
     /** 
      * No android
      * 
      * @var bool 
      */
-    protected bool $no_android = true;
+    protected bool $_no_android = true;
 
     /** 
      * No ms
      * 
      * @var bool 
      */
-    protected bool $no_ms = true;
+    protected bool $_no_ms = true;
 
     /** 
      * Browser config file
      * 
      * @var string 
      */
-    protected string $browser_config_file = '';
+    protected string $_browser_config_file = '';
 
     /** 
      * Tile color
      * 
      * @var string 
      */
-    protected string $tile_color = '';
+    protected string $_tile_color = '';
+
+    /** 
+     * Message
+     * 
+     * @var string 
+     */
+    protected string $message = '';
 
 
     /** 
@@ -188,10 +195,7 @@ abstract class BaseFavicons implements FillInterface
     public function __construct()
     {
         // Load Imagine
-        $this->imagine = $this->_loadImagine();
-
-        // Determine source path
-        $this->source_path = $this->_determineSourcePath();
+        $this->_imagine = $this->_loadImagine();
     }
 
 
@@ -205,7 +209,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function setInputFile(string $file)
     {
-        $this->input = $file;
+        $this->_input = $file;
     }
 
     /** 
@@ -213,7 +217,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function setOutputFolder(string $folder)
     {
-        $this->output = $folder;
+        $this->_output = $folder;
     }
 
     /** 
@@ -221,7 +225,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function setAppName(string $name)
     {
-        $this->appName = $name;
+        $this->_appName = $name;
     }
 
     /** 
@@ -229,7 +233,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function setBrowserConfigFile(string $file)
     {
-        $this->browser_config_file = $file;
+        $this->_browser_config_file = $file;
     }
 
     /** 
@@ -237,7 +241,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function setTileColor(string $color)
     {
-        $this->tile_color = $color;
+        $this->_tile_color = $color;
     }
 
     /** 
@@ -245,7 +249,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function useIco64(bool $ico64 = true)
     {
-        $this->ico_64 = $ico64;
+        $this->_ico_64 = $ico64;
     }
 
     /** 
@@ -253,7 +257,7 @@ abstract class BaseFavicons implements FillInterface
      */
     public function useIco48(bool $ico48 = true)
     {
-        $this->ico_48 = $ico48;
+        $this->_ico_48 = $ico48;
     }
 
     /** 
@@ -262,9 +266,9 @@ abstract class BaseFavicons implements FillInterface
     public function useOldApple(bool $oldApple = false)
     {
         if ($oldApple) {
-            $this->no_old_apple = false;
+            $this->_no_old_apple = false;
         } else {
-            $this->no_old_apple = true;
+            $this->_no_old_apple = true;
         }
     }
 
@@ -274,9 +278,9 @@ abstract class BaseFavicons implements FillInterface
     public function useAndroid(bool $android = false)
     {
         if ($android) {
-            $this->no_android = false;
+            $this->_no_android = false;
         } else {
-            $this->no_android = true;
+            $this->_no_android = true;
         }
     }
 
@@ -286,9 +290,9 @@ abstract class BaseFavicons implements FillInterface
     public function useMs(bool $ms = false)
     {
         if ($ms) {
-            $this->no_ms = false;
+            $this->_no_ms = false;
         } else {
-            $this->no_ms = true;
+            $this->_no_ms = true;
         }
     }
 
@@ -296,6 +300,30 @@ abstract class BaseFavicons implements FillInterface
     // ---------------------------------------------------
     // GETTER
     // ---------------------------------------------------
+
+    /** 
+     * Get browser config file
+     */
+    public function getBrowserConfigFile()
+    {
+        return $this->_browser_config_file;
+    }
+
+    /** 
+     * Get tile color
+     */
+    public function getTileColor(string $color)
+    {
+        return $this->_tile_color;
+    }
+
+    /** 
+     * Get Message 
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
 
     /**
      * Return sizes from options
@@ -308,20 +336,20 @@ abstract class BaseFavicons implements FillInterface
     public static function getSizes(): array
     {
         $result = array_merge(self::$sizes, array());
-        if (self::$no_old_apple) {
+        if (self::$_no_old_apple) {
             unset($result['apple-touch-icon-57x57.png']);
             unset($result['apple-touch-icon-60x60.png']);
             unset($result['apple-touch-icon-72x72.png']);
             unset($result['apple-touch-icon-114x114.png']);
         }
-        if (self::$no_android) {
+        if (self::$_no_android) {
             unset($result['android-chrome-36x36.png']);
             unset($result['android-chrome-48x48.png']);
             unset($result['android-chrome-72x72.png']);
             unset($result['android-chrome-96x96.png']);
             unset($result['android-chrome-144x144.png']);
         }
-        if (self::$no_ms) {
+        if (self::$_no_ms) {
             unset($result['mstile-70x70.png']);
             unset($result['mstile-144x144.png']);
             unset($result['mstile-150x150.png']);
@@ -352,35 +380,54 @@ abstract class BaseFavicons implements FillInterface
     // ---------------------------------------------------
 
     /** 
+     * Generate 
+     */
+    public function generate()
+    {
+        if (!$this->checkInputFile()) {
+            return false;
+        }
+
+        if (!$this->checkOutputFolder()) {
+            return false;
+        }
+
+        $this->generateICO();
+        $this->generatePNGs();
+        $this->generateManifestJson();
+        return true;
+    }
+
+    /** 
      * Generate ICO 
      */
     protected function generateICO()
     {
         $bmpTemp = $this->source_path . "/../bin/" . $this::CI4FAVICONS_NAME . "-tmp-16.bmp";
-        $filename = $this->output . "favicon.ico";
+        $filename = $this->_output . "favicon.ico";
 
         // Original Image
-        $originalImage = $this->imagine->open($this->input)->strip();
+        $originalImage = $this->_imagine->open($this->_input)->strip();
         $originalImage
             ->copy()
             ->resize(new Box(16, 16))
             ->save($bmpTemp);
 
         // Icon
-        $icon = $this->imagine->open($bmpTemp);
+        $icon = $this->_imagine->open($bmpTemp);
         $icon
             ->layers()
             ->add($originalImage->copy()->resize(new Box(32, 32)));
 
         // ICO 48
-        if ($this->ico_48) {
+        if ($this->_ico_48) {
             $icon
                 ->layers()
                 ->add($originalImage->copy()->resize(new Box(48, 48)));
         }
 
         // ICO 64
-        if ($this->ico_64) {
+        if ($this->_ico_64) {
             $icon
                 ->layers()
                 ->add($originalImage->copy()->resize(new Box(64, 64)));
@@ -401,15 +448,15 @@ abstract class BaseFavicons implements FillInterface
     protected function generatePNGs()
     {
         $sizes = self::getSizes();
-        $originalImage = $this->imagine->open($this->input)->strip();
+        $originalImage = $this->_imagine->open($this->_input)->strip();
         $pallete       = new RGB();
         $background    = $pallete->color('#000', 0);
 
         foreach ($sizes as $imageName => $size) {
-            $imagePath = $this->output . $imageName;
+            $imagePath = $this->_output . $imageName;
             if (substr($imageName, 0, 6) == 'mstile' && $size != 144) {
                 $opt  = self::getTileSettings($imageName);
-                $tile = $this->imagine->create(new Box($opt['w'], $opt['h']), $background);
+                $tile = $this->_imagine->create(new Box($opt['w'], $opt['h']), $background);
                 $tile->paste(
                     $originalImage->copy()->resize(new Box($opt['icon'], $opt['icon'])),
                     new Point($opt['top'], $opt['left'])
@@ -429,7 +476,7 @@ abstract class BaseFavicons implements FillInterface
     protected function generateManifestJson()
     {
         $manifest = array(
-            'name'  => $this->appName,
+            'name'  => $this->_appName,
             'icons' => array(),
         );
         foreach (array(36, 48, 72, 96, 144, 192) as $size) {
@@ -441,7 +488,7 @@ abstract class BaseFavicons implements FillInterface
             );
         }
         $json         = json_encode($manifest, JSON_PRETTY_PRINT);
-        $jsonFilePath = $this->output . "manifest.json";
+        $jsonFilePath = $this->_output . "manifest.json";
         file_put_contents($jsonFilePath, $json);
     }
 
@@ -451,11 +498,14 @@ abstract class BaseFavicons implements FillInterface
     // ---------------------------------------------------
 
 
+    /** 
+     * Check Input File
+     */
     protected function checkInputFile(): bool
     {
-        if (!empty($this->input)) {
-            if (filter_var($this->input, FILTER_VALIDATE_URL)) {
-                $ch = curl_init($this->input);
+        if (!empty($this->_input)) {
+            if (filter_var($this->_input, FILTER_VALIDATE_URL)) {
+                $ch = curl_init($this->_input);
                 curl_setopt($ch, CURLOPT_NOBODY, true);
                 curl_exec($ch);
                 $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -467,14 +517,19 @@ abstract class BaseFavicons implements FillInterface
             }
         }
 
+        $this->message = lang('Favicons.inputFileDoesNotExist');
         return false;
     }
 
+    /** 
+     * Check Output Folder
+     */
     protected function checkOutputFolder(): bool
     {
-        $path = realpath($this->output);
+        $path = realpath($this->_output);
 
         if ($path === false && !is_dir($path)) {
+            $this->message = lang('Favicons.outputPathDoesNotExist');
             return false;
         }
 
@@ -496,19 +551,8 @@ abstract class BaseFavicons implements FillInterface
             return new GdImagine();
         }
 
+        $this->message = lang('Favicons.failedToLoadImagine');
         throw FaviconsException::forFailedToLoadImagine();
         exit(1);
-    }
-
-    /**
-     * Determines the current source path from which all other files are located.
-     */
-    private function _determineSourcePath()
-    {
-        $this->source_path = realpath(__DIR__);
-        if ($this->source_path == '/' || empty($this->source_path)) {
-            throw FaviconsException::forUnableDetermineSourceDirectory();
-            exit(1);
-        }
     }
 }
