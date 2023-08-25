@@ -1,6 +1,6 @@
 {
 	"name": "officialxviid/ci4favicons",
-	"description": "Auto generate favicons and HTML tags from a PNG file",
+	"description": "Auto generate favicons and HTML tags from a PNG file with CodeIgniter 4.",
 	"type": "library",
 	"keywords": [
 		"favicon",
