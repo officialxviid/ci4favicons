@@ -449,6 +449,37 @@ abstract class BaseFavicons
     // UTILITIES
     // ---------------------------------------------------
 
+
+    protected function checkInputFile(): bool
+    {
+        if (!empty($this->input)) {
+            if (filter_var($this->input, FILTER_VALIDATE_URL)) {
+                $ch = curl_init($this->input);
+                curl_setopt($ch, CURLOPT_NOBODY, true);
+                curl_exec($ch);
+                $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                if ($code == 200) {
+                    return true;
+                }
+            } else {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    protected function checkOutputFolder(): bool
+    {
+        $path = realpath($this->output);
+
+        if ($path === false && !is_dir($path)) {
+            return false;
+        }
+
+        return true;
+    }
+
     /** 
      * Detect imagine
      */
