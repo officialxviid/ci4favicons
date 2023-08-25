@@ -26,4 +26,29 @@ class Favicons extends BaseConfig
      * @var string 
      */
     public string $appName = "CI4Favicons";
+
+    /** 
+     * Browser config
+     * 
+     * @var string 
+     */
+    public string $browser_config_file = "";
+
+    /** 
+     * Tile color
+     * 
+     * Example for white
+     * - fff
+     * - ffffff
+     * 
+     * @var string 
+     */
+    public string $tileColor = "ffffff";
+
+    /** 
+     * Auto generate html tags
+     * 
+     * @var bool 
+     */
+    public bool $autoGenerateHTMLTags = true;
 }
