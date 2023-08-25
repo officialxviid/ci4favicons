@@ -548,6 +548,61 @@ class Favicons implements FaviconsInterface
     // ---------------------------------------------------
     // UTILITIES
     // ---------------------------------------------------
+    /** 
+     * Cook
+     * check and cleaning input file
+     */
+    private function _cook()
+    {
+        // Check input file is not empty
+        if (empty($this->_input)) {
+            $this->message = lang('Favicons.requiredInputFile');
+            return false;
+        }
+
+        // Check File Exist
+        if (filter_var($this->_input, FILTER_VALIDATE_URL)) {
+            $ch = curl_init($this->_input);
+            curl_setopt($ch, CURLOPT_NOBODY, true);
+            curl_exec($ch);
+            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            if ($code != 200) {
+                $this->message = lang('Favicons.inputFileDoesNotExist');
+                return false;
+            }
+        } else {
+            if (!file_exists($this->_input)) {
+                $this->message = lang('Favicons.inputFileDoesNotExist');
+                return false;
+            }
+        }
+
+        // Path info
+        $pathinfo = pathinfo($this->_input);
+        $extension = $pathinfo['extension'];
+
+        // Check support extension
+        if (!in_array($extension, $this->_supportedInputFileExtension)) {
+            $this->message = lang('Favicons.unsupportedInputFileExtension', [$extension]);
+            return false;
+        }
+
+        // Transform
+        if ($extension == 'svg') {
+            $image = $this->_svg_to_png();
+        } elseif ($extension == 'jpg') {
+            $image = $this->_jpg_to_png();
+        }
+    }
+
+    private function _svg_to_png()
+    {
+        list($width, $height) = getimagesize($this->_input);
+        $svg = file_get_contents($this->_input);
+
+        $imagick = new \Imagick();
+        $imagick->readImageBlob($svg);
+    }
 
 
     /** 
