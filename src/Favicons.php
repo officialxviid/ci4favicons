@@ -7,10 +7,11 @@ use Imagine\Image\Box;
 use Imagine\Image\Palette\RGB;
 use Imagine\Image\Point;
 use Imagine\Imagick\Imagine as ImagickImagine;
+use OfficialXVIID\CI4Favicons\Config\Favicons as FaviconsConfig;
 use OfficialXVIID\CI4Favicons\Exceptions\FaviconsException;
 use OfficialXVIID\CI4Favicons\Interfaces\FaviconsInterface;
 
-class BaseFavicons implements FaviconsInterface
+class Favicons implements FaviconsInterface
 {
     /**
      * The current version of CI4Favicons
@@ -188,14 +189,30 @@ class BaseFavicons implements FaviconsInterface
      */
     protected string $message = '';
 
+    /** 
+     * Supported Input File Extension
+     * 
+     * @var array 
+     */
+    private array $_supportedInputFileExtension = [
+        'png'
+    ];
+
 
     /** 
      * Constructor
      */
-    public function __construct()
+    public function __construct(?FaviconsConfig $config)
     {
         // Load Imagine
         $this->_imagine = $this->_loadImagine();
+
+        // Config
+        if ($config) {
+            $config->inputFile      = $this->_input;
+            $config->outputFolder   = $this->_output;
+            $config->appName        = $this->_appName;
+        }
     }
 
 
@@ -324,6 +341,7 @@ class BaseFavicons implements FaviconsInterface
     public static function getSizes(): array
     {
         $result = array_merge(self::$sizes, array());
+
         if (self::$_no_old_apple) {
             unset($result['apple-touch-icon-57x57.png']);
             unset($result['apple-touch-icon-60x60.png']);
@@ -344,6 +362,7 @@ class BaseFavicons implements FaviconsInterface
             unset($result['mstile-310x310.png']);
             unset($result['mstile-310x150.png']);
         }
+
         return $result;
     }
 
@@ -389,7 +408,7 @@ class BaseFavicons implements FaviconsInterface
     /** 
      * Generate ICO 
      */
-    protected function generateICO()
+    public function generateICO()
     {
         $bmpTemp = $this->source_path . "/../bin/" . $this::CI4FAVICONS_NAME . "-tmp-16.bmp";
         $filename = $this->_output . "favicon.ico";
@@ -433,7 +452,7 @@ class BaseFavicons implements FaviconsInterface
     /** 
      * Generate PNGs 
      */
-    protected function generatePNGs()
+    public function generatePNGs()
     {
         $sizes = self::getSizes();
         $originalImage = $this->_imagine->open($this->_input)->strip();
@@ -461,7 +480,7 @@ class BaseFavicons implements FaviconsInterface
     /** 
      * Generate Manifest Json 
      */
-    protected function generateManifestJson()
+    public function generateManifestJson()
     {
         $manifest = array(
             'name'  => $this->_appName,
@@ -478,6 +497,51 @@ class BaseFavicons implements FaviconsInterface
         $json         = json_encode($manifest, JSON_PRETTY_PRINT);
         $jsonFilePath = $this->_output . "manifest.json";
         file_put_contents($jsonFilePath, $json);
+    }
+
+    /**
+     * Generate HTML Tags
+     */
+    public function generateHTMLTags()
+    {
+        $results = [];
+
+        if (!$this->_no_ms) {
+            if (!$this->_browser_config_file) {
+                $results[] = '<meta name="msapplication-config" content="none" />';
+            } else {
+                $results[] = '<meta name="msapplication-config" content="/' . $this->_browser_config_file . '" />';
+            }
+        }
+        if (!$this->_no_old_apple) {
+            $results[] = '<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />';
+            $results[] = '<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />';
+            $results[] = '<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />';
+            $results[] = '<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />';
+        }
+        $results[] = '<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />';
+        $results[] = '<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />';
+        $results[] = '<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />';
+        $results[] = '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />';
+        $results[] = '<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />';
+        $results[] = '<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />';
+        $results[] = '<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />';
+        if (!$this->_no_android) {
+            $results[] = '<link rel="manifest" href="/manifest.json" />';
+        }
+        if (!$this->_no_ms) {
+            if ($this->_appName) {
+                $results[] = '<meta name="application-name" content="' . $this->_appName . '" />';
+            }
+            $results[] = '<meta name="msapplication-TileColor" content="' . $this->_tile_color . '" />';
+            $results[] = '<meta name="msapplication-TileImage" content="/mstile-144x144.png" />';
+            $results[] = '<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />';
+            $results[] = '<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />';
+            $results[] = '<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />';
+            $results[] = '<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />';
+        }
+
+        return implode("\n", $results);
     }
 
 
@@ -498,10 +562,12 @@ class BaseFavicons implements FaviconsInterface
                 curl_exec($ch);
                 $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
                 if ($code == 200) {
-                    return true;
+                    return $this->checkExtensionFile();
                 }
             } else {
-                return true;
+                if (file_exists($this->_input)) {
+                    return $this->checkExtensionFile();
+                }
             }
         }
 
@@ -522,6 +588,22 @@ class BaseFavicons implements FaviconsInterface
         }
 
         return true;
+    }
+
+    /** 
+     * Check Extension File
+     */
+    protected function checkExtensionFile()
+    {
+        $pathinfo = pathinfo($this->_input);
+        $extension = $pathinfo['extension'];
+
+        if (in_array($extension, $this->_supportedInputFileExtension)) {
+            return true;
+        }
+
+        $this->message = lang('Favicons.unsupportedExtensionFile', [$extension]);
+        return false;
     }
 
     /** 
